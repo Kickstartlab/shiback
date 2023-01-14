@@ -209,7 +209,7 @@ export default function Home() {
 
             {/* tokenomics */}
 
-            <div className="">
+            <div className="bg-line">
 
                 <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
                     <div className=" text-center">
@@ -226,7 +226,7 @@ export default function Home() {
                         </button>
                     </div>
 
-                    <div className="grid lg:grid-cols-3 sm:grid-cols-1 justify-between items-center gap-12 mt-12">
+                    <div className="grid lg:grid-cols-3 sm:grid-cols-1 justify-between items-center gap-12 mt-20">
 
 
                         <div className='border-2 border-pink-100 p-5 font-inter'>

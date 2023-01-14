@@ -19,6 +19,13 @@
   background-repeat: no-repeat;
 }
 
+.bg-line{
+  background-image: url(../src/assets/bg-line.png);
+  background-position: top;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+}
+
 #tsparticles {
   position: absolute;
   top: 0;
