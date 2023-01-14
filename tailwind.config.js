@@ -9,23 +9,19 @@ module.exports = {
         "100": "#03E6B6",
         "200": "#00CEEA",
       },
-      black: {
-        "50": "#666",
-        "100": "#222",
-        "900": "#181F2B",
+      blue: {
+        "50": "#06071B",
       },
       white: {
         "100": "#fff",
-        "50": "#f5f5f5"
       },
       pink: {
-        "100": "#FFE7DB",
-        "200": "#FA7436"
+        "100": "#EF09DA",
       },
     },
     fontFamily: {
-      'volkhov': ["'Volkhov', serif;"],
-      'poppins': ["'Poppins', sans-serif;"],
+      'coolvetica': ["'Coolvetica', sans-serif;"],
+      'inter': ["'Inter', sans-serif;"]
     }
   },
   plugins: [],

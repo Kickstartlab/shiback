@@ -1,5 +1,19 @@
+.bg-blue{
+  background-image: url(../src/assets/bg-blue.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .bg-img{
-  background-image: url(../src/assets/box.png);
+  background-image: url(../src/assets/blue.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-hand{
+  background-image: url(../src/assets/hand.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
