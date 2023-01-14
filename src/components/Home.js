@@ -1,6 +1,7 @@
 import React from 'react'
 import Footer from './Footer'
 import Menu from './Menu'
+import Menu_Scroll from './Menu_Scroll'
 import top from '../assets/top.png';
 import p_1 from '../assets/p-1.png';
 import p_2 from '../assets/p-2.png';
@@ -32,7 +33,7 @@ export default function Home() {
 
             <div className="bg-blue">
 
-                <div className="lg:px-20 px-5 container mx-auto bg-blue">
+                <div className="lg:px-20 px-5 container mx-auto md:block hidden">
                     <Menu />
                     <div className="lg:flex block justify-between items-center py-12">
                         <div className="text-white-100">
@@ -47,14 +48,44 @@ export default function Home() {
                                 Intelligence
                             </h2>
 
+                            <button className="rounded-full font-inter font-semibold px-6 py-2 flex gap-3 items-center bg-pink-100 mt-8">
+
+                                <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 6L0.25 11.1962L0.25 0.803848L10 6Z" fill="#fff" />
+                                </svg>
+
+                                Play demo
+
+                            </button>
                         </div>
 
                         <div className="font-inter">
                             <img src={top} alt="Logo" className="lg:w-10/12 lg:float-right lg:mt-0 mt-8" />
                         </div>
+
                     </div>
 
                 </div>
+
+                <div className="px-5 md:hidden block">
+                    <Menu />
+
+                    <div className="text-white-100 flex flex-col items-center py-20">
+
+                        <h2 className='text-5xl font-coolvetica font-bold text-black-100'>
+                            Next Level
+
+                        </h2>
+                        <h2 className='text-5xl pt-3 font-coolvetica font-bold text-black-100'>
+                            Doge
+                        </h2>
+                        <h2 className='text-5xl pt-3 font-coolvetica font-bold text-black-100'>
+                            Intelligence
+                        </h2>
+
+                    </div>
+                </div>
+
             </div>
 
 
@@ -207,7 +238,7 @@ export default function Home() {
 
                 <div className="lg:flex gap-12">
 
-                <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100 lg:hidden block text-center'>
+                    <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100 lg:hidden block text-center'>
                         UPGRADE TO BOT
                     </h2>
 
@@ -362,7 +393,7 @@ export default function Home() {
                     <div className="lg:p-8 p-4 border-2 border-pink-100 mt-12 mb-6 font-inter">
                         <div className="lg:flex gap-8">
                             <div>
-                                <img src={r_1} alt="" className='w-full'/>
+                                <img src={r_1} alt="" className='w-full' />
                             </div>
                             <div className='flex flex-col gap-y-12 lg:pt-0 pt-8'>
                                 <img src={r_2} alt="" />

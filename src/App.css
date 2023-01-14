@@ -40,10 +40,13 @@
   border-radius: 32px;
 }
 
-.slick-slide {
-  padding: 20px;
-}
+@media only screen and (max-width: 768px) {
 
-.slick-list {
-  padding: -20px;
+  .bg-blue {
+    background-image: url(../src/assets/bg-top.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
 }
