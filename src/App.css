@@ -1,45 +1,49 @@
-.bg-blue{
+.bg-blue {
   background-image: url(../src/assets/bg-blue.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.bg-img{
+.bg-img {
   background-image: url(../src/assets/blue.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.bg-hand{
+.bg-hand {
   background-image: url(../src/assets/hand.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.bg-line{
+.bg-line {
   background-image: url(../src/assets/bg-line.png);
   background-position: top;
-  /* background-size: cover; */
   background-repeat: no-repeat;
 }
 
-#tsparticles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  padding: 0;
-  margin: 0;
-  z-index: -1;
+.bg_1 {
+  background: linear-gradient(180deg, #C689F9 0%, rgba(217, 217, 217, 0) 172.98%, #F5F5F5 172.98%);
+  border-radius: 32px;
+}
+
+.bg_2 {
+  background: linear-gradient(180deg, #EF09DA -3.94%, #C584F5 111.16%);
+  border-radius: 32px;
+}
+
+.bg_3 {
+  background: linear-gradient(180.48deg, #EF09DA 0.41%, rgba(233, 70, 218, 0.3) 140.64%);
+  border-radius: 32px;
 }
 
 .slick-slide {
   padding: 20px;
 }
+
 .slick-list {
   padding: -20px;
 }

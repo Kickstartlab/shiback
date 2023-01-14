@@ -8,11 +8,19 @@ import bot from '../assets/bot.png';
 import telegram from '../assets/telegram.png';
 import twitter from '../assets/twitter.png';
 import rocket from '../assets/rocket.png';
+import shield from '../assets/shield.png';
+import ai from '../assets/ai.png';
+import bulb from '../assets/bulb.png';
 import b_1 from '../assets/b-1.png';
 import b_2 from '../assets/b-2.png';
 import b_3 from '../assets/b-3.png';
 import b_4 from '../assets/b-4.png';
 import b_5 from '../assets/b-5.png';
+import r_1 from '../assets/r-1.png';
+import r_2 from '../assets/r-2.png';
+import r_3 from '../assets/r-3.png';
+import roadmap from '../assets/roadmap.png';
+
 
 
 export default function Home() {
@@ -39,23 +47,10 @@ export default function Home() {
                                 Intelligence
                             </h2>
 
-                            <div className="mt-8">
-
-                                <button className="rounded-full font-inter font-semibold px-6 py-2 flex gap-3 items-center bg-pink-100">
-
-                                    <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10 6L0.25 11.1962L0.25 0.803848L10 6Z" fill="#fff" />
-                                    </svg>
-
-                                    Play demo
-
-                                </button>
-
-                            </div>
                         </div>
 
                         <div className="font-inter">
-                            <img src={top} alt="Logo" className="lg:w-10/12 lg:float-right" />
+                            <img src={top} alt="Logo" className="lg:w-10/12 lg:float-right lg:mt-0 mt-8" />
                         </div>
                     </div>
 
@@ -168,7 +163,7 @@ export default function Home() {
 
                         <div className='border-2 border-pink-100 p-5 font-inter'>
                             <div className="flex items-center justify-between">
-                                <img src={rocket} alt="" />
+                                <img src={shield} alt="" />
                                 <h3 className='text-xl font-semibold'>Lorem Ipsum</h3>
                             </div>
 
@@ -180,7 +175,7 @@ export default function Home() {
 
                         <div className='border-2 border-pink-100 p-5 font-inter'>
                             <div className="flex items-center justify-between">
-                                <img src={rocket} alt="" />
+                                <img src={ai} alt="" />
                                 <h3 className='text-xl font-semibold'>Lorem Ipsum</h3>
                             </div>
 
@@ -192,7 +187,7 @@ export default function Home() {
 
                         <div className='border-2 border-pink-100 p-5 font-inter'>
                             <div className="flex items-center justify-between">
-                                <img src={rocket} alt="" />
+                                <img src={bulb} alt="" />
                                 <h3 className='text-xl font-semibold'>Lorem Ipsum</h3>
                             </div>
 
@@ -204,6 +199,99 @@ export default function Home() {
                     </div>
                 </div>
 
+            </div>
+
+            {/* UPGRADE TO BOT */}
+
+            <div className="lg:py-12 py-5 lg:px-20 px-5 container mx-auto">
+
+                <div className="lg:flex gap-12">
+
+                <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100 lg:hidden block text-center'>
+                        UPGRADE TO BOT
+                    </h2>
+
+                    <div className="lg:flex gap-6 my-8">
+
+                        <div className='bg_1 p-5 font-inter flex flex-col items-center justify-center mt-20'>
+                            <h3 className='lg:text-3xl text-2xl font-semibold text-center'>Private
+                                Package</h3>
+
+                            <ul className="list-disc text-lg font-semibold my-6 lg:h-72 ml-0">
+                                <li>
+                                    Basic Plan
+                                </li>
+                                <li>
+                                    $10/ month
+                                </li>
+                                <li>
+                                    Billed yearly
+                                </li>
+                                <li>
+                                    Pay with $AlDoge
+                                </li>
+                            </ul>
+
+                            <button className="border-2 border-white-100 px-5 py-2 rounded-full hover:bg-pink-100">
+                                Subscribe
+                            </button>
+                        </div>
+
+                        <div className='bg_2 p-5 font-inter flex flex-col items-center justify-center lg:mt-0 mt-8'>
+                            <h3 className='lg:text-3xl text-2xl font-semibold text-center'>Channel
+                                Package</h3>
+
+
+                            <ul className="list-disc text-lg font-semibold my-6 lg:h-72 ml-0">
+                                <li>
+                                    Pro Plan
+                                </li>
+                                <li>
+                                    $48/ month
+                                </li>
+                                <li>
+                                    Billed vearlv
+                                </li>
+                                <li>
+                                    Pav with $A|Doge
+                                </li>
+                            </ul>
+
+                            <button className="border-2 border-white-100 px-5 py-2 rounded-full hover:bg-pink-100">
+                                Subscribe
+                            </button>
+                        </div>
+
+                        <div className='bg_3 p-5 font-inter flex flex-col items-center justify-center mt-12'>
+                            <h3 className='lg:text-3xl text-2xl font-semibold text-center'>Group
+                                Package</h3>
+
+                            <ul className="list-disc text-lg font-semibold my-6 lg:h-72 ml-0">
+                                <li>
+                                    Basic Plan
+                                </li>
+                                <li>
+                                    $48/ month
+                                </li>
+                                <li>
+                                    Billed yearly
+                                </li>
+                                <li>
+                                    Pay with $AlDoge
+                                </li>
+                            </ul>
+
+                            <button className="border-2 border-white-100 px-5 py-2 rounded-full hover:bg-pink-100">
+                                Subscribe
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100 mt-12 lg:block hidden'>
+                        UPGRADE TO BOT
+                    </h2>
+                </div>
             </div>
 
 
@@ -263,6 +351,44 @@ export default function Home() {
 
             </div>
 
+            {/* roadmap */}
+
+            <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto text-white-100">
+                <div className="">
+                    <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100 text-center'>
+                        ROADMAP
+                    </h2>
+
+                    <div className="lg:p-8 p-4 border-2 border-pink-100 mt-12 mb-6 font-inter">
+                        <div className="lg:flex gap-8">
+                            <div>
+                                <img src={r_1} alt="" className='w-full'/>
+                            </div>
+                            <div className='flex flex-col gap-y-12 lg:pt-0 pt-8'>
+                                <img src={r_2} alt="" />
+                                <img src={r_3} alt="" />
+                            </div>
+                            <div className='lg:w-4/12 w-full lg:pt-0 pt-5'>
+                                <h3 className="text-2xl font-bold">
+                                    Lorem Ipsum
+                                </h3>
+
+                                <p className="py-5">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                </p>
+
+                                <button className="rounded-lg border-2 border-white-100 px-5 py-2">
+                                    Completed
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src={roadmap} alt="" />
+                </div>
+
+            </div>
+
             {/* token listing */}
 
             <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
@@ -272,19 +398,19 @@ export default function Home() {
                     </h2>
 
                     <div className="flex justify-center items-center gap-2">
-                        <div classname="bg-pink-50 p-2 rounded-lg">
+                        <div className="bg-pink-50 rounded-lg">
                             <img src={b_1} alt="" />
                         </div>
-                        <div classname="bg-pink-50 p-2 rounded-lg">
+                        <div className="bg-pink-50 p-2 rounded-lg">
                             <img src={b_2} alt="" />
                         </div>
-                        <div classname="bg-pink-50 p-2 rounded-lg">
+                        <div className="bg-pink-50 p-2 rounded-lg">
                             <img src={b_3} alt="" />
                         </div>
-                        <div classname="bg-pink-50 p-2 rounded-lg">
+                        <div className="bg-pink-50 p-2 rounded-lg">
                             <img src={b_4} alt="" />
                         </div>
-                        <div classname="bg-pink-50 p-2 rounded-lg">
+                        <div className="bg-pink-50 p-2 rounded-lg">
                             <img src={b_5} alt="" />
                         </div>
                     </div>

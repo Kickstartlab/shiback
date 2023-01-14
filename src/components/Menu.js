@@ -66,19 +66,19 @@ export default function Menu() {
           </div>
         </div>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md transition duration-500 cursor-pointer hover:bg-zinc-700 text-white">
-          <Link to="/" className="text-lg ml-4 text-gray-200 font-semibold">Home</Link>
+          <a href="/" className="text-lg ml-4 text-gray-200 font-semibold">Home</a>
         </button>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-zinc-700 text-white">
-          <Link to="/" className="text-lg ml-4 text-gray-200 font-semibold">About</Link>
+          <a href="/" className="text-lg ml-4 text-gray-200 font-semibold">Updates</a>
         </button>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-zinc-700 text-white">
-          <Link to="/" className="text-lg ml-4 text-gray-200 font-semibold">Destination</Link>
+          <a href="/" className="text-lg ml-4 text-gray-200 font-semibold">Services</a>
         </button>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
-          <Link to="/" className="text-lg ml-4 text-gray-200 font-semibold">Service</Link>
+          <a href="/" className="text-lg ml-4 text-gray-200 font-semibold">Features</a>
         </button>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
-          <Link to="/" className="text-lg ml-4 text-gray-200 font-semibold">Blog</Link>
+          <a href="/" className="text-lg ml-4 text-gray-200 font-semibold">About Us</a>
         </button>
       </div> : null
       }
