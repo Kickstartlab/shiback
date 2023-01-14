@@ -227,10 +227,8 @@ export default function Home() {
 
 
                         <div className='border-2 border-pink-100 p-5 font-inter'>
-                            <div className="flex items-center justify-between">
-                                <img src={rocket} alt="" />
-                                <h3 className='text-xl font-semibold'>Lorem Ipsum</h3>
-                            </div>
+
+                            <h3 className='text-xl font-semibold pt-5'>Developement - 1%</h3>
 
                             <p className="py-6">
                                 Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa. Viverra dignissim ac vitae interdum consequat elementum sed.
@@ -239,10 +237,8 @@ export default function Home() {
                         </div>
 
                         <div className='border-2 border-pink-100 p-5 font-inter'>
-                            <div className="flex items-center justify-between">
-                                <img src={rocket} alt="" />
-                                <h3 className='text-xl font-semibold'>Lorem Ipsum</h3>
-                            </div>
+
+                            <h3 className='text-xl font-semibold pt-5'>Marketing - 1%</h3>
 
                             <p className="py-6">
                                 Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa. Viverra dignissim ac vitae interdum consequat elementum sed.
@@ -251,10 +247,8 @@ export default function Home() {
                         </div>
 
                         <div className='border-2 border-pink-100 p-5 font-inter'>
-                            <div className="flex items-center justify-between">
-                                <img src={rocket} alt="" />
-                                <h3 className='text-xl font-semibold'>Lorem Ipsum</h3>
-                            </div>
+
+                            <h3 className='text-xl font-semibold pt-5'>Donation - 1%</h3>
 
                             <p className="py-6">
                                 Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa. Viverra dignissim ac vitae interdum consequat elementum sed.
