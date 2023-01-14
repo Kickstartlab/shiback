@@ -8,8 +8,11 @@ import bot from '../assets/bot.png';
 import telegram from '../assets/telegram.png';
 import twitter from '../assets/twitter.png';
 import rocket from '../assets/rocket.png';
-
-
+import b_1 from '../assets/b-1.png';
+import b_2 from '../assets/b-2.png';
+import b_3 from '../assets/b-3.png';
+import b_4 from '../assets/b-4.png';
+import b_5 from '../assets/b-5.png';
 
 
 export default function Home() {
@@ -64,7 +67,7 @@ export default function Home() {
 
             <div className="bg-img">
 
-                <div className="py-20 lg:px-20 px-5 container mx-auto">
+                <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
                     <div className="lg:flex items-center justify-between">
 
                         <div className="img lg:w-5/12 w-full">
@@ -97,10 +100,10 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="py-12 lg:px-20 px-5 container mx-auto text-white-100 ">
+                <div className="lg:py-12 py-5 lg:px-20 px-5 container mx-auto text-white-100 ">
                     <div className="lg:flex items-center justify-between">
 
-                        <div className="lg:w-5/12 w-full lg:mt-0 mt-8">
+                        <div className="lg:w-5/12 w-full">
                             <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100'>
                                 Project on Twitter
                             </h2>
@@ -123,7 +126,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className="img lg:w-5/12 w-full">
+                        <div className="img lg:w-5/12 w-full lg:mt-0 mt-8">
                             <img src={p_2} alt="" />
                         </div>
                     </div>
@@ -136,7 +139,7 @@ export default function Home() {
 
             <div className="bg-hand">
 
-                <div className="py-20 lg:px-20 px-5 container mx-auto">
+                <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
                     <div className=" text-center ">
                         <p className="py-12 font-inter">
                             Why choose Us?
@@ -208,7 +211,7 @@ export default function Home() {
 
             <div className="">
 
-                <div className="py-20 lg:px-20 px-5 container mx-auto">
+                <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
                     <div className=" text-center">
                         <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100'>
                             TOKENOMICS
@@ -260,8 +263,37 @@ export default function Home() {
 
             </div>
 
+            {/* token listing */}
+
+            <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
+                <div className=" text-center">
+                    <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100'>
+                        TOKEN LISTINGS
+                    </h2>
+
+                    <div className="flex justify-center items-center gap-2">
+                        <div classname="bg-pink-50 p-2 rounded-lg">
+                            <img src={b_1} alt="" />
+                        </div>
+                        <div classname="bg-pink-50 p-2 rounded-lg">
+                            <img src={b_2} alt="" />
+                        </div>
+                        <div classname="bg-pink-50 p-2 rounded-lg">
+                            <img src={b_3} alt="" />
+                        </div>
+                        <div classname="bg-pink-50 p-2 rounded-lg">
+                            <img src={b_4} alt="" />
+                        </div>
+                        <div classname="bg-pink-50 p-2 rounded-lg">
+                            <img src={b_5} alt="" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
             <Footer />
 
-        </div >
+        </div>
     )
 }
