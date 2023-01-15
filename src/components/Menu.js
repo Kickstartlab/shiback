@@ -8,6 +8,7 @@ export default function Menu() {
   const [show, setShow] = useState(false);
 
   const [prevScrollPos, setPrevScrollPos] = useState(0);
+
   const [visible, setVisible] = useState(true)
 
   const handleScroll = () => {
@@ -28,6 +29,26 @@ export default function Menu() {
     return () => window.removeEventListener('scroll', handleScroll)
   })
 
+  const [nextScrollPos, setNextScrollPos] = useState(0);
+  const [notVisible, setNotVisible] = useState(true)
+
+  const handleVisible = () => {
+    const currentScrollPos = window.scrollY
+
+    if (currentScrollPos > nextScrollPos) {
+      setNotVisible(false)
+    } else {
+      setNotVisible(true)
+    }
+
+    setNextScrollPos(currentScrollPos)
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleVisible);
+
+    return () => window.removeEventListener('scroll', handleVisible)
+  })
 
   return (
 
@@ -67,20 +88,17 @@ export default function Menu() {
         </div>
       </div>
 
-      <div className={`lg:hidden flex items-center justify-between pt-5 font-inter sticky ${visible ? 'top-0' : ''}`}>
+      <div className={`lg:hidden flex items-center justify-between pt-5 px-5 sticky ${visible ? 'block' : 'hidden'}`}>
         <a href="/" className="logo">
           <h2 class="uppercase text-2xl font-coolvetica font-semibold">AI DOGE</h2>
         </a>
 
         <button>
-          {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 text-white">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
-          </svg> */}
           <img src={doge} alt="" className="w-24" />
         </button>
       </div>
 
-      {/* <div className={`lg:hidden flex items-center justify-between font-inter sticky top-0`}>
+      <div className={`lg:hidden flex items-center justify-between fixed w-full top-0 px-5 bg-blue-50 py-3 ${notVisible ? 'hidden' : 'block'}`}>
         <a href="/" className="logo">
           <h2 class="uppercase text-2xl font-coolvetica font-semibold">AI DOGE</h2>
         </a>
@@ -90,7 +108,7 @@ export default function Menu() {
             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
           </svg>
         </button>
-      </div> */}
+      </div>
 
       {show ? <div className="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-3/4 overflow-y-auto text-center font-inter font-semibold bg-pink-100 z-20" style={{ left: "0" }}>
         <div className="text-gray-100 text-xl">

@@ -67,7 +67,7 @@ export default function Home() {
 
                 </div>
 
-                <div className="px-5 md:hidden block">
+                <div className="md:hidden block">
                     <Menu />
 
                     <div className="text-white-100 flex flex-col items-center py-20">
