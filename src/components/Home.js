@@ -1,7 +1,6 @@
 import React from 'react'
 import Footer from './Footer'
 import Menu from './Menu'
-import Menu_Scroll from './Menu_Scroll'
 import top from '../assets/top.png';
 import p_1 from '../assets/p-1.png';
 import p_2 from '../assets/p-2.png';
@@ -21,7 +20,7 @@ import r_1 from '../assets/r-1.png';
 import r_2 from '../assets/r-2.png';
 import r_3 from '../assets/r-3.png';
 import roadmap from '../assets/roadmap.png';
-
+import Typed from "react-typed"
 
 
 export default function Home() {
@@ -39,7 +38,6 @@ export default function Home() {
                         <div className="text-white-100">
                             <h2 className='md:text-6xl text-3xl font-coolvetica font-bold text-black-100'>
                                 Next Level
-
                             </h2>
                             <h2 className='md:text-6xl text-3xl pt-3 font-coolvetica font-bold text-black-100'>
                                 Doge
@@ -74,7 +72,6 @@ export default function Home() {
 
                         <h2 className='text-5xl font-coolvetica font-bold text-black-100'>
                             Next Level
-
                         </h2>
                         <h2 className='text-5xl pt-3 font-coolvetica font-bold text-black-100'>
                             Doge
@@ -96,14 +93,15 @@ export default function Home() {
                 <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
                     <div className="lg:flex items-center justify-between">
 
-                        <div className="img lg:w-5/12 w-full">
-                            <img src={p_1} alt="" />
+                        <div className="lg:w-5/12 w-full">
+                            <img src={p_1} alt="" className='img-item ' />
                         </div>
 
                         <div className="text-white-100 lg:w-5/12 w-full lg:mt-0 mt-8">
                             <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100'>
                                 Project on Telegram
                             </h2>
+
                             <p className="py-6 font-inter">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
                             </p>
@@ -187,7 +185,14 @@ export default function Home() {
                             </div>
 
                             <p className="py-6">
-                                Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa. Viverra dignissim ac vitae interdum consequat elementum sed.
+                                <Typed
+                                    strings={[
+                                        'Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa. Viverra dignissim ac vitae interdum consequat elementum sed.'
+                                    ]}
+                                    typeSpeed={40}
+                                    cursorChar={''}
+
+                                />
                             </p>
 
                         </div>
@@ -199,7 +204,14 @@ export default function Home() {
                             </div>
 
                             <p className="py-6">
-                                Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa. Viverra dignissim ac vitae interdum consequat elementum sed.
+                                <Typed
+                                    strings={[
+                                        'Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa. Viverra dignissim ac vitae interdum consequat elementum sed.'
+                                    ]}
+                                    typeSpeed={40}
+                                    cursorChar={''}
+
+                                />
                             </p>
 
                         </div>
@@ -211,7 +223,14 @@ export default function Home() {
                             </div>
 
                             <p className="py-6">
-                                Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa. Viverra dignissim ac vitae interdum consequat elementum sed.
+                                <Typed
+                                    strings={[
+                                        'Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa. Viverra dignissim ac vitae interdum consequat elementum sed.'
+                                    ]}
+                                    typeSpeed={40}
+                                    cursorChar={''}
+
+                                />
                             </p>
 
                         </div>
@@ -223,10 +242,19 @@ export default function Home() {
                             </div>
 
                             <p className="py-6">
-                                Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa. Viverra dignissim ac vitae interdum consequat elementum sed.
+                                <Typed
+                                    strings={[
+                                        'Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa. Viverra dignissim ac vitae interdum consequat elementum sed.'
+                                    ]}
+                                    typeSpeed={40}
+                                    cursorChar={''}
+
+                                />
                             </p>
 
                         </div>
+
+
                     </div>
                 </div>
 
@@ -353,7 +381,14 @@ export default function Home() {
                             <h3 className='text-xl font-semibold pt-5'>Developement - 1%</h3>
 
                             <p className="py-6">
-                                Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa. Viverra dignissim ac vitae interdum consequat elementum sed.
+                                <Typed
+                                    strings={[
+                                        'Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa. Viverra dignissim ac vitae interdum consequat elementum sed.'
+                                    ]}
+                                    typeSpeed={40}
+                                    cursorChar={''}
+
+                                />
                             </p>
 
                         </div>
@@ -363,7 +398,14 @@ export default function Home() {
                             <h3 className='text-xl font-semibold pt-5'>Marketing - 1%</h3>
 
                             <p className="py-6">
-                                Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa. Viverra dignissim ac vitae interdum consequat elementum sed.
+                                <Typed
+                                    strings={[
+                                        'Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa. Viverra dignissim ac vitae interdum consequat elementum sed.'
+                                    ]}
+                                    typeSpeed={40}
+                                    cursorChar={''}
+
+                                />
                             </p>
 
                         </div>
@@ -373,7 +415,13 @@ export default function Home() {
                             <h3 className='text-xl font-semibold pt-5'>Donation - 1%</h3>
 
                             <p className="py-6">
-                                Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa. Viverra dignissim ac vitae interdum consequat elementum sed.
+                                <Typed
+                                    strings={[
+                                        'Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa. Viverra dignissim ac vitae interdum consequat elementum sed.'
+                                    ]}
+                                    typeSpeed={40}
+                                    cursorChar={''}
+                                />
                             </p>
 
                         </div>
@@ -392,14 +440,17 @@ export default function Home() {
 
                     <div className="lg:p-8 p-4 border-2 border-pink-100 mt-12 mb-6 font-inter">
                         <div className="lg:flex gap-8">
-                            <div>
-                                <img src={r_1} alt="" className='w-full' />
+                            <div className="flex gap-8 items-center">
+                                <div>
+                                    <img src={r_1} alt="" className='roadmap-img' />
+                                </div>
+                                <div className='flex flex-col gap-y-6'>
+                                    <img src={r_2} alt="" className='roadmap-img' />
+                                    <img src={r_3} alt="" className='roadmap-img' />
+                                </div>
                             </div>
-                            <div className='flex flex-col gap-y-12 lg:pt-0 pt-8'>
-                                <img src={r_2} alt="" />
-                                <img src={r_3} alt="" />
-                            </div>
-                            <div className='lg:w-4/12 w-full lg:pt-0 pt-5'>
+
+                            <div className='lg:w-5/12 w-full lg:pt-0 pt-5'>
                                 <h3 className="text-2xl font-bold">
                                     Lorem Ipsum
                                 </h3>
@@ -412,6 +463,8 @@ export default function Home() {
                                     Completed
                                 </button>
                             </div>
+
+
                         </div>
                     </div>
 

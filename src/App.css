@@ -40,6 +40,27 @@
   border-radius: 32px;
 }
 
+.img-item:after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-color: #353535;
+  left: 0;
+  top: 0;
+  transform: rotate(5deg);
+}
+
+.roadmap-img {
+  border-radius: 5px;
+}
+
+.roadmap-img:hover {
+  transition: all 1s ease;
+  transform: translateZ(4);
+}
+
+
 @media only screen and (max-width: 768px) {
 
   .bg-blue {
