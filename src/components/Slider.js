@@ -1,26 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import deal_1 from '../assets/deal_1.png';
-import deal_2 from '../assets/deal_2.png';
-import deal_3 from '../assets/deal_3.png';
-import deal_4 from '../assets/deal_4.png';
-import deal_5 from '../assets/deal_5.png';
-import deal_6 from '../assets/deal_6.png';
-import deal_7 from '../assets/deal_7.png';
-import deal_8 from '../assets/deal_8.png';
-import pin from '../assets/pin.png';
-import star from '../assets/star.svg';
+import r_1 from '../assets/r-1.png';
+import r_2 from '../assets/r-2.png';
+import r_3 from '../assets/r-3.png';
+import r_4 from '../assets/r-4.png';
+import r_5 from '../assets/r-5.png';
+import r_6 from '../assets/r-6.png';
+import r_7 from '../assets/r-7.png';
+import r_8 from '../assets/r-8.png';
+import r_9 from '../assets/r-9.png';
+
+
 
 function ImageSlider() {
     let settings = {
         dots: false,
-        infinite: true,
+        infinite: false,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         arrows: false,
         cssEase: "linear",
         autoplaySpeed: 2000,
@@ -28,15 +29,14 @@ function ImageSlider() {
         responsive: [{
             breakpoint: 1024,
             settings: {
-                slidesToShow: 4,
+                slidesToShow: 1,
                 slidesToScroll: 1,
-                centerMode: true
             }
 
         }, {
             breakpoint: 800,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 2,
                 dots: true,
                 infinite: true,
@@ -49,13 +49,13 @@ function ImageSlider() {
                 slidesToScroll: 1,
                 dots: true,
                 infinite: true,
-                autoplay: true,
+                autoplay: false,
                 autoplaySpeed: 2000,
             }
         }]
     }
 
-
+    const [show, setShow] = useState(false);
 
     const slider = React.useRef(null);
 
@@ -64,266 +64,159 @@ function ImageSlider() {
 
             <Slider ref={slider} {...settings}>
 
-
-                <div className="card-wrapper col-span-1">
-                    <div className="bg-white-100 rounded-md card">
-                        <img src={deal_1} alt="" className='w-full' />
-
-                        <div className="p-5">
-                            <div className="flex justify-between">
-                                <h4 className='text-black-100 text-xl font-bold font-poppins'>Madrid</h4>
-
-                                <div className="flex items-center gap-3">
-                                    <img src={star} alt="" />
-                                    <p className="font-poppins text-gray-400">4.8</p>
-                                </div>
+                <div className="lg:p-8 p-4 border-2 border-pink-100 mt-12 mb-6 font-inter">
+                    <div className="lg:flex gap-8">
+                        <div className="flex gap-8 items-center">
+                            <div>
+                                <img src={r_1} alt="" className='roadmap-img' />
                             </div>
-
-                            <div className="flex items-center justify-between mt-4">
-                                <div className="flex items-center gap-3">
-                                    <img src={pin} alt="" />
-                                    <p className="font-poppins text-black-50">Spain</p>
-                                </div>
-                                <div className="flex items-center gap-4 font-poppins font-semibold">
-                                    <p className="text-black-50"><del>$950</del></p>
-                                    <span className='py-1 px-2 rounded-md bg-pink-100'>
-                                        <p className="text-pink-200">$850</p>
-                                    </span>
-                                </div>
+                            <div className='flex flex-col gap-y-6'>
+                                <img src={r_2} alt="" className='roadmap-img' />
+                                <img src={r_3} alt="" className='roadmap-img' />
                             </div>
                         </div>
+
+                        <div className='lg:w-5/12 w-full lg:pt-0 pt-5'>
+                            <h3 className="text-2xl font-bold">
+                                Twitter Bot
+                                Release
+                            </h3>
+
+                            <p className="py-5">
+                                The AIDoge bot for Twitter is 100% free to use for anyone with access to Twitter. The AIDoge Twitter bot uses DogeGPT for text-based responses and Stable Diffusion for image generation. When used properly, the bot will reply to your tweet with an Ai generated response or image.
+                            </p>
+
+                            <button className="rounded-lg border-2 border-white-100 px-5 py-2">
+                                Completed
+                            </button>
+                        </div>
+
 
                     </div>
                 </div>
 
-                <div className="col-span-1 card-wrapper">
-                    <div className="bg-white-100 rounded-md">
-                        <img src={deal_2} alt="" className='w-full' />
-                        <div className="p-5">
-                            <div className="flex justify-between">
-                                <h4 className='text-black-100 text-xl font-bold font-poppins'>Firenze</h4>
-
-                                <div className="flex items-center gap-3">
-                                    <img src={star} alt="" />
-                                    <p className="font-poppins text-gray-400">4.5</p>
-                                </div>
+                <div className="lg:p-8 p-4 border-2 border-pink-100 mt-12 mb-6 font-inter">
+                    <div className="lg:flex gap-8">
+                        <div className="flex gap-8 items-center">
+                            <div>
+                                <img src={r_4} alt="" className='roadmap-img' />
                             </div>
-
-                            <div className="flex items-center justify-between mt-4">
-                                <div className="flex items-center gap-3">
-                                    <img src={pin} alt="" />
-                                    <p className="font-poppins text-black-50">Italy</p>
-                                </div>
-                                <div className="flex items-center gap-4 font-poppins font-semibold">
-                                    <p className="text-black-50"><del>$950</del></p>
-                                    <span className='py-1 px-2 rounded-md bg-pink-100'>
-                                        <p className="text-pink-200">$850</p>
-                                    </span>
-                                </div>
+                            <div className='flex flex-col gap-y-6'>
+                                <img src={r_5} alt="" className='roadmap-img' />
+                                <img src={r_6} alt="" className='roadmap-img' />
                             </div>
                         </div>
+
+                        <div className='lg:w-5/12 w-full lg:pt-0 pt-5'>
+                            <h3 className="text-2xl font-bold">
+                                Stable Diffusion
+                                Models Release
+                            </h3>
+
+                            <p className="py-5">
+                                To complement our migration to Stable Diffusion, we are implementing multiple models that will be readily available to our users. These models will allow users to create images based on the theme and style of art.
+                            </p>
+
+                            <button className="rounded-lg border-2 border-white-100 px-5 py-2">
+                                To Be Achieved
+                            </button>
+                        </div>
+
 
                     </div>
                 </div>
 
-                <div className="col-span-1 card-wrapper">
-                    <div className="bg-white-100 rounded-md">
-                        <img src={deal_3} alt="" className='w-full' />
-                        <div className="p-5">
-                            <div className="flex justify-between">
-                                <h4 className='text-black-100 text-xl font-bold font-poppins'>Paris</h4>
-
-                                <div className="flex items-center gap-3">
-                                    <img src={star} alt="" />
-                                    <p className="font-poppins text-gray-400">4.8</p>
-                                </div>
+                <div className="lg:p-8 p-4 border-2 border-pink-100 mt-12 mb-6 font-inter">
+                    <div className="lg:flex gap-8">
+                        <div className="flex gap-8 items-center">
+                            <div>
+                                <img src={r_7} alt="" className='roadmap-img' />
                             </div>
-
-                            <div className="flex items-center justify-between mt-4">
-                                <div className="flex items-center gap-3">
-                                    <img src={pin} alt="" />
-                                    <p className="font-poppins text-black-50">France</p>
-                                </div>
-                                <div className="flex items-center gap-4 font-poppins font-semibold">
-                                    <p className="text-black-50"><del>$950</del></p>
-                                    <span className='py-1 px-2 rounded-md bg-pink-100'>
-                                        <p className="text-pink-200">$850</p>
-                                    </span>
-                                </div>
+                            <div className='flex flex-col gap-y-6'>
+                                <img src={r_8} alt="" className='roadmap-img' />
+                                <img src={r_9} alt="" className='roadmap-img' />
                             </div>
                         </div>
 
-                    </div>
-                </div>
+                        <div className='lg:w-5/12 w-full lg:pt-0 pt-5'>
+                            <h3 className="text-2xl font-bold">
+                                Machine Learning
+                                & Data Collection
+                            </h3>
 
-                <div className="col-span-1 card-wrapper">
-                    <div className="bg-white-100 rounded-md">
-                        <img src={deal_4} alt="" className='w-full' />
-                        <div className="p-5">
-                            <div className="flex justify-between">
-                                <h4 className='text-black-100 text-xl font-bold font-poppins'>London</h4>
+                            <p className="py-5">
+                                Data collection and model training for the chatbot in the crypto-telegram niche will commence. Having a model trained for such purposes will alow for a more custom user feel when requesting data and generating images.
+                            </p>
 
-                                <div className="flex items-center gap-3">
-                                    <img src={star} alt="" />
-                                    <p className="font-poppins text-gray-400">4.8</p>
-                                </div>
-                            </div>
-
-                            <div className="flex items-center justify-between mt-4">
-                                <div className="flex items-center gap-3">
-                                    <img src={pin} alt="" />
-                                    <p className="font-poppins text-black-50">UK</p>
-                                </div>
-                                <div className="flex items-center gap-4 font-poppins font-semibold">
-                                    <p className="text-black-50"><del>$950</del></p>
-                                    <span className='py-1 px-2 rounded-md bg-pink-100'>
-                                        <p className="text-pink-200">$850</p>
-                                    </span>
-                                </div>
-                            </div>
+                            <button className="rounded-lg border-2 border-white-100 px-5 py-2">
+                                To Be Achieved
+                            </button>
                         </div>
 
-                    </div>
-                </div>
-
-                <div className="col-span-1 card-wrapper">
-                    <div className="bg-white-100 rounded-md">
-                        <img src={deal_5} alt="" className='w-full' />
-                        <div className="p-5">
-                            <div className="flex justify-between">
-                                <h4 className='text-black-100 text-xl font-bold font-poppins'>Sydney</h4>
-
-                                <div className="flex items-center gap-3">
-                                    <img src={star} alt="" />
-                                    <p className="font-poppins text-gray-400">4.8</p>
-                                </div>
-                            </div>
-
-                            <div className="flex items-center justify-between mt-4">
-                                <div className="flex items-center gap-3">
-                                    <img src={pin} alt="" />
-                                    <p className="font-poppins text-black-50">Spain</p>
-                                </div>
-                                <div className="flex items-center gap-4 font-poppins font-semibold">
-                                    <p className="text-black-50"><del>$950</del></p>
-                                    <span className='py-1 px-2 rounded-md bg-pink-100'>
-                                        <p className="text-pink-200">$850</p>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div className="col-span-1 card-wrapper">
-                    <div className="bg-white-100 rounded-md">
-                        <img src={deal_6} alt="" className='w-full' />
-                        <div className="p-5">
-                            <div className="flex justify-between">
-                                <h4 className='text-black-100 text-xl font-bold font-poppins'>Cairo</h4>
-
-                                <div className="flex items-center gap-3">
-                                    <img src={star} alt="" />
-                                    <p className="font-poppins text-gray-400">4.5</p>
-                                </div>
-                            </div>
-
-                            <div className="flex items-center justify-between mt-4">
-                                <div className="flex items-center gap-3">
-                                    <img src={pin} alt="" />
-                                    <p className="font-poppins text-black-50">Italy</p>
-                                </div>
-                                <div className="flex items-center gap-4 font-poppins font-semibold">
-                                    <p className="text-black-50"><del>$950</del></p>
-                                    <span className='py-1 px-2 rounded-md bg-pink-100'>
-                                        <p className="text-pink-200">$850</p>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div className="col-span-1 card-wrapper">
-                    <div className="bg-white-100 rounded-md">
-                        <img src={deal_7} alt="" className='w-full' />
-                        <div className="p-5">
-                            <div className="flex justify-between">
-                                <h4 className='text-black-100 text-xl font-bold font-poppins'>Bali</h4>
-
-                                <div className="flex items-center gap-3">
-                                    <img src={star} alt="" />
-                                    <p className="font-poppins text-gray-400">4.8</p>
-                                </div>
-                            </div>
-
-                            <div className="flex items-center justify-between mt-4">
-                                <div className="flex items-center gap-3">
-                                    <img src={pin} alt="" />
-                                    <p className="font-poppins text-black-50">France</p>
-                                </div>
-                                <div className="flex items-center gap-4 font-poppins font-semibold">
-                                    <p className="text-black-50"><del>$950</del></p>
-                                    <span className='py-1 px-2 rounded-md bg-pink-100'>
-                                        <p className="text-pink-200">$850</p>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div className="col-span-1 card-wrapper">
-                    <div className="bg-white-100 rounded-md">
-                        <img src={deal_8} alt="" className='w-full' />
-                        <div className="p-5">
-                            <div className="flex justify-between">
-                                <h4 className='text-black-100 text-xl font-bold font-poppins'>Baku</h4>
-
-                                <div className="flex items-center gap-3">
-                                    <img src={star} alt="" />
-                                    <p className="font-poppins text-gray-400">4.8</p>
-                                </div>
-                            </div>
-
-                            <div className="flex items-center justify-between mt-4">
-                                <div className="flex items-center gap-3">
-                                    <img src={pin} alt="" />
-                                    <p className="font-poppins text-black-50">UK</p>
-                                </div>
-                                <div className="flex items-center gap-4 font-poppins font-semibold">
-                                    <p className="text-black-50"><del>$950</del></p>
-                                    <span className='py-1 px-2 rounded-md bg-pink-100'>
-                                        <p className="text-pink-200">$850</p>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
 
                     </div>
                 </div>
 
             </Slider>
 
-            <div className="flex gap-6 justify-center pt-8">
-                <button onClick={() => slider?.current?.slickPrev()} className="left-arrow bg-white-100 hover:bg-seagreen-100 rounded-full p-2">
+            <div className="pt-8">
 
-                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.292892 8.70711C-0.0976315 8.31658 -0.0976315 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM17 9H1V7H17V9Z" fill="#999999" />
-                    </svg>
+                <div className="progressbar-line border-b-2 border-pink-100 lg:flex hidden text-white-100 ">
 
+                    <button onClick={() => slider?.current?.slickPrev()} className="absolute -mt-4 text-lg font-inter">
+                        <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="19.5" cy="19.5" r="19.5" fill="#EF09DA" />
+                        </svg>
 
-                </button>
-                <button onClick={() => slider?.current?.slickNext()} className="left-arrow bg-white-100 hover:bg-seagreen-100 rounded-full p-2">
+                        2023
+                    </button>
 
-                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" fill="#999999" />
-                    </svg>
+                    <button onClick={() => slider?.current?.slickNext() && setShow(!show)} className="absolute -mt-3 left-1/3 text-lg font-inter">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11.5" cy="11.5" r="10" stroke="#EF09DA" stroke-width="3" fill="#06071B" />
+                        </svg>
 
-                </button>
+                        {show ?
+                            <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="19.5" cy="19.5" r="19.5" fill="#EF09DA" />
+                            </svg>
+                            : null}
+                        2023
+                    </button>
+
+                    <button onClick={() => slider?.current?.slickNext()} className="absolute -mt-3 right-1/3 text-lg font-inter">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11.5" cy="11.5" r="10" stroke="#EF09DA" stroke-width="3" fill="#06071B" />
+                        </svg>
+
+                        2024
+                    </button>
+
+                    <button className="absolute -mt-3 right-0 mr-28 text-lg font-inter">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11.5" cy="11.5" r="10" stroke="#EF09DA" stroke-width="3" fill="#06071B" />
+                        </svg>
+
+                        Coming soon
+                    </button>
+                </div>
+
+                <div className="progressbar-line border-b-2 border-pink-100 lg:hidden flex text-white-100 ">
+
+                    <button onClick={() => slider?.current?.slickPrev()} className="absolute -mt-3 left-12 text-lg font-inter">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11.5" cy="11.5" r="10" stroke="#EF09DA" stroke-width="3" fill="#06071B" />
+                        </svg>
+                    </button>
+
+                    <button onClick={() => slider?.current?.slickNext()} className="absolute -mt-3 right-12 text-lg font-inter">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11.5" cy="11.5" r="10" stroke="#EF09DA" stroke-width="3" fill="#06071B" />
+                        </svg>
+
+                    </button>
+                </div>
+
             </div>
 
         </div>

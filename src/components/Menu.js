@@ -1,4 +1,3 @@
-// import React, { useState } from 'react'
 import React, { useEffect, useState } from "react";
 import doge from '../assets/doge.png'
 
@@ -44,7 +43,7 @@ export default function Menu() {
   }
 
   useEffect(() => {
-    
+
     window.addEventListener('scroll', handleVisible);
     return () => window.addEventListener('scroll', handleVisible)
   })
@@ -52,22 +51,61 @@ export default function Menu() {
   return (
 
     <header>
+
       <div className="lg:flex hidden items-center justify-between font-inter text-white-100 h-20">
         <a href="/" className="logo">
           <h2 class="uppercase text-2xl font-coolvetica font-semibold">AI DOGE</h2>
         </a>
 
-        <nav>
-          <ul className="text-md flex justify-center gap-8 items-center">
-            <li><a href="/" className="text-zinc-100">Home</a></li>
-            <li><a href="/" className="hover:text-pink-100 cursor-pointer">Updates</a></li>
-            <li><a href="/" className="hover:text-pink-100 cursor-pointer">Services</a></li>
-            <li><a href="/" className="hover:text-pink-100 cursor-pointer">Features</a></li>
-            <li><a href="/" className="hover:text-pink-100 cursor-pointer">About Us</a></li>
-          </ul>
-        </nav>
+        <div className="flex items-center gap-3">
+          <a href="#about" className="">Menu</a>
+
+          <button onClick={() => setShow(!show)}>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 text-white-100">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+            </svg>
+          </button>
+        </div>
 
       </div>
+
+      {show ? <div className="sidebar fixed top-0 bottom-0 right-0 p-2 overflow-y-auto text-center font-inter font-semibold bg-pink-100 z-20" style={{ left: "0" }}>
+
+        <div className="">
+          <div className="p-2.5 mt-1 flex items-center">
+            <a href="/" className="logo">
+              <h2 class="uppercase text-2xl font-coolvetica font-semibold">AI DOGE</h2>
+            </a>
+          </div>
+
+          <button onClick={() => setShow(!show)}>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 text-white-100">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+            </svg>
+          </button>
+        </div>
+        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md transition duration-500 cursor-pointer hover:bg-zinc-700 text-white">
+          <a href="/" className="text-zinc-100">Home</a>
+        </button>
+        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-zinc-700 text-white">
+          <a href="#about" className="hover:text-pink-100 cursor-pointer">About</a>
+        </button>
+        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-zinc-700 text-white">
+          <a href="#tokenomics" className="hover:text-pink-100 cursor-pointer">Tokenomics</a>
+        </button>
+        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
+          <a href="#roadmap" className="hover:text-pink-100 cursor-pointer">Roadmap</a>
+        </button>
+        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
+          <a href="#contact" className="hover:text-pink-100 cursor-pointer">Contract</a>
+        </button>
+      </div> : null
+      }
+
+
+
+
+
 
       <div className={`lg:hidden flex items-center justify-between pt-5 px-5 sticky ${visible ? 'block' : 'hidden'}`}>
         <a href="/" className="logo">
@@ -103,16 +141,16 @@ export default function Menu() {
           <a href="/" className="text-lg ml-4 text-gray-200 font-semibold">Home</a>
         </button>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-zinc-700 text-white">
-          <a href="/" className="text-lg ml-4 text-gray-200 font-semibold">Updates</a>
+          <a href="#updates" className="text-lg ml-4 text-gray-200 font-semibold">Updates</a>
         </button>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-zinc-700 text-white">
-          <a href="/" className="text-lg ml-4 text-gray-200 font-semibold">Services</a>
+          <a href="#services" className="text-lg ml-4 text-gray-200 font-semibold">Services</a>
         </button>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
-          <a href="/" className="text-lg ml-4 text-gray-200 font-semibold">Features</a>
+          <a href="#features" className="text-lg ml-4 text-gray-200 font-semibold">Features</a>
         </button>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
-          <a href="/" className="text-lg ml-4 text-gray-200 font-semibold">About Us</a>
+          <a href="#about" className="text-lg ml-4 text-gray-200 font-semibold">About Us</a>
         </button>
       </div> : null
       }

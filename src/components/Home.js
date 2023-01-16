@@ -16,11 +16,10 @@ import b_2 from '../assets/b-2.png';
 import b_3 from '../assets/b-3.png';
 import b_4 from '../assets/b-4.png';
 import b_5 from '../assets/b-5.png';
-import r_1 from '../assets/r-1.png';
-import r_2 from '../assets/r-2.png';
-import r_3 from '../assets/r-3.png';
-import roadmap from '../assets/roadmap.png';
+import soon from '../assets/soon.png';
+import hand from '../assets/hand.png';
 import Typed from "react-typed"
+import Slider from './Slider';
 
 
 export default function Home() {
@@ -37,24 +36,35 @@ export default function Home() {
                     <div className="lg:flex block justify-between items-center py-12">
                         <div className="text-white-100">
                             <h2 className='md:text-6xl text-3xl font-coolvetica font-bold text-black-100'>
-                                Next Level
+                                <Typed
+                                    strings={[
+                                        'Free to use, cross'
+                                    ]}
+                                    typeSpeed={40}
+                                    cursorChar={''}
+
+                                />
                             </h2>
                             <h2 className='md:text-6xl text-3xl pt-3 font-coolvetica font-bold text-black-100'>
-                                Doge
+                                <Typed
+                                    strings={[
+                                        'platform artificial'
+                                    ]}
+                                    typeSpeed={40}
+                                    cursorChar={''}
+
+                                />
                             </h2>
                             <h2 className='md:text-6xl text-3xl pt-3 font-coolvetica font-bold text-black-100'>
-                                Intelligence
+                                <Typed
+                                    strings={[
+                                        'intelligence that is here to stay'
+                                    ]}
+                                    typeSpeed={40}
+                                    cursorChar={''}
+
+                                />
                             </h2>
-
-                            <button className="rounded-full font-inter font-semibold px-6 py-2 flex gap-3 items-center bg-pink-100 mt-8">
-
-                                <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10 6L0.25 11.1962L0.25 0.803848L10 6Z" fill="#fff" />
-                                </svg>
-
-                                Play demo
-
-                            </button>
                         </div>
 
                         <div className="font-inter">
@@ -71,13 +81,13 @@ export default function Home() {
                     <div className="text-white-100 flex flex-col items-center py-20">
 
                         <h2 className='text-5xl font-coolvetica font-bold text-black-100'>
-                            Next Level
+                            Free to use, cross
                         </h2>
                         <h2 className='text-5xl pt-3 font-coolvetica font-bold text-black-100'>
-                            Doge
+                            platform artificial
                         </h2>
                         <h2 className='text-5xl pt-3 font-coolvetica font-bold text-black-100'>
-                            Intelligence
+                            intelligence that is here to stay
                         </h2>
 
                     </div>
@@ -93,31 +103,47 @@ export default function Home() {
                 <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
                     <div className="lg:flex items-center justify-between">
 
-                        <div className="lg:w-5/12 w-full">
-                            <img src={p_1} alt="" className='img-item ' />
+                        <div className="lg:w-5/12 w-full img-item relative">
+                            <img src={p_1} alt="" className='' />
                         </div>
 
                         <div className="text-white-100 lg:w-5/12 w-full lg:mt-0 mt-8">
                             <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100'>
-                                Project on Telegram
+
+                                <Typed
+                                    strings={[
+                                        'Aidoge  on Telegram'
+                                    ]}
+                                    typeSpeed={40}
+                                    cursorChar={''}
+
+                                />
                             </h2>
 
                             <p className="py-6 font-inter">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
+
+                                <Typed
+                                    strings={[
+                                        '    The AIDoge chatbot for telegram is 100% free to use for anyone with access to Telegram. This bot can be added to any telegram group and is also accessible via direct messaging. The AIDoge chatbot uses DogeGPT for text-based responses and Stable Diffusion for image generation. Read our documentation on how to use the Telegram bot'
+                                    ]}
+                                    typeSpeed={40}
+                                    cursorChar={''}
+
+                                />
                             </p>
 
                             <div className="flex gap-8 items-center">
-                                <div className='border border-pink-100 rounded-lg font-inter lg:px-5 px-3 md:text-sm cursor-pointer py-2 flex items-center gap-3 divide-x divide-pink-100'>
+                                <a href='https://t.me/DogeGPTBot' className='border border-pink-100 rounded-lg font-inter lg:px-5 px-3 md:text-sm cursor-pointer py-2 flex items-center gap-3 divide-x divide-pink-100'>
                                     <img src={bot} alt="" className='pr-2 border-r border-pink-100' />
 
                                     Telegram Bot
-                                </div>
+                                </a>
 
-                                <div className='border border-pink-100 rounded-lg font-inter lg:px-5 px-3 md:text-sm cursor-pointer py-2 flex items-center gap-3 divide-x divide-pink-100'>
+                                <a href='https://t.me/AIDogeChat' className='border border-pink-100 rounded-lg font-inter lg:px-5 px-3 md:text-sm cursor-pointer py-2 flex items-center gap-3 divide-x divide-pink-100'>
                                     <img src={telegram} alt="" className='pr-2 border-r border-pink-100' />
 
                                     Official Telegram
-                                </div>
+                                </a>
                             </div>
                         </div>
 
@@ -129,28 +155,43 @@ export default function Home() {
 
                         <div className="lg:w-5/12 w-full">
                             <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100'>
-                                Project on Twitter
+                                <Typed
+                                    strings={[
+                                        ' Project on Twitter'
+                                    ]}
+                                    typeSpeed={40}
+                                    cursorChar={''}
+
+                                />
                             </h2>
                             <p className="py-6 font-inter">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
+
+                                <Typed
+                                    strings={[
+                                        'The Aidoge bot for Twitter is 100% free to use for anyone with access to Twitter. The Aidoge Twitter bot uses ChatGDP for text-based responses and Stable Diffusion for image generation.When used properly, the bot will reply to your tweet with an Ai generated response or image. Read our documentation on how to use the Twitter bot.'
+                                    ]}
+                                    typeSpeed={40}
+                                    cursorChar={''}
+
+                                />
                             </p>
 
                             <div className="flex gap-8 items-center">
-                                <div className='border border-pink-100 rounded-lg font-inter lg:px-5 px-3 md:text-sm cursor-pointer py-2 flex items-center gap-3 divide-x divide-pink-100'>
+                                <a href='https://twitter.com/AIDogeBsc' className='border border-pink-100 rounded-lg font-inter lg:px-5 px-3 md:text-sm cursor-pointer py-2 flex items-center gap-3 divide-x divide-pink-100'>
                                     <img src={bot} alt="" className='pr-2 border-r border-pink-100' />
 
                                     TWitter Bot
-                                </div>
+                                </a>
 
-                                <div className='border border-pink-100 rounded-lg font-inter lg:px-5 px-3 md:text-sm cursor-pointer py-2 flex items-center gap-3 divide-x divide-pink-100'>
+                                <a href='https://twitter.com/AIDogeBsc' className='border border-pink-100 rounded-lg font-inter lg:px-5 px-3 md:text-sm cursor-pointer py-2 flex items-center gap-3 divide-x divide-pink-100'>
                                     <img src={twitter} alt="" className='pr-2 border-r border-pink-100' />
 
                                     Official Twitter
-                                </div>
+                                </a>
                             </div>
                         </div>
 
-                        <div className="img lg:w-5/12 w-full lg:mt-0 mt-8">
+                        <div className="img-item relative lg:w-5/12 w-full lg:mt-0 mt-8">
                             <img src={p_2} alt="" />
                         </div>
                     </div>
@@ -161,33 +202,33 @@ export default function Home() {
 
             {/* why choose us */}
 
-            <div className="bg-hand">
+            <div id='about' className="">
 
-                <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
-                    <div className=" text-center ">
-                        <p className="py-12 font-inter">
-                            Why choose Us?
-                        </p>
-                        <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100'>
-                            Lorem Impsum dollar here
-                        </h2>
-                        <p className="py-6 font-inter lg:w-9/12 w-full flex mx-auto">
-                            Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa. Viverra dignissim ac vitae interdum consequat elementum sed. Tincidunt porttitor eget et adipiscing sagittis diam. Vitae sed nam vulputate bibendum ornare vitae. Scelerisque sit sed.
-                        </p>
-                    </div>
+                <div className="flex lg:mb-12 items-center gap-32">
+                    <img src={hand} alt="" className='lg:block hidden'/>
+
+                    <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100'>
+                        Why choose Us?
+                    </h2>
+
+                </div>
+
+                <div className="lg:pb-20 lg:px-20 px-5 container mx-auto">
+
 
                     <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-6 my-8">
 
                         <div className='border-2 border-pink-100 p-5 font-inter'>
                             <div className="flex items-center justify-between">
                                 <img src={rocket} alt="" />
-                                <h3 className='text-xl font-semibold'>Lorem Ipsum</h3>
+                                <h3 className='text-xl font-semibold'>Mass
+                                    Exposure</h3>
                             </div>
 
                             <p className="py-6">
                                 <Typed
                                     strings={[
-                                        'Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa. Viverra dignissim ac vitae interdum consequat elementum sed.'
+                                        'Over 10k requests made, 100 groups. With these numbers, we are leading the race by a mile in Telegram and Twitter Ai bots..'
                                     ]}
                                     typeSpeed={40}
                                     cursorChar={''}
@@ -200,13 +241,13 @@ export default function Home() {
                         <div className='border-2 border-pink-100 p-5 font-inter'>
                             <div className="flex items-center justify-between">
                                 <img src={shield} alt="" />
-                                <h3 className='text-xl font-semibold'>Lorem Ipsum</h3>
+                                <h3 className='text-xl font-semibold'>Safety</h3>
                             </div>
 
                             <p className="py-6">
                                 <Typed
                                     strings={[
-                                        'Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa. Viverra dignissim ac vitae interdum consequat elementum sed.'
+                                        'Our smart contract is renounced and our team is trusted. We believe in making an impact and leaving a lasting impression.'
                                     ]}
                                     typeSpeed={40}
                                     cursorChar={''}
@@ -219,13 +260,13 @@ export default function Home() {
                         <div className='border-2 border-pink-100 p-5 font-inter'>
                             <div className="flex items-center justify-between">
                                 <img src={ai} alt="" />
-                                <h3 className='text-xl font-semibold'>Lorem Ipsum</h3>
+                                <h3 className='text-xl font-semibold'>In House Development</h3>
                             </div>
 
                             <p className="py-6">
                                 <Typed
                                     strings={[
-                                        'Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa. Viverra dignissim ac vitae interdum consequat elementum sed.'
+                                        'All development is done by members of the team who are active users of the products we produce. The vision we have is the creation we make.'
                                     ]}
                                     typeSpeed={40}
                                     cursorChar={''}
@@ -238,13 +279,13 @@ export default function Home() {
                         <div className='border-2 border-pink-100 p-5 font-inter'>
                             <div className="flex items-center justify-between">
                                 <img src={bulb} alt="" />
-                                <h3 className='text-xl font-semibold'>Lorem Ipsum</h3>
+                                <h3 className='text-xl font-semibold'>Experienced Team</h3>
                             </div>
 
                             <p className="py-6">
                                 <Typed
                                     strings={[
-                                        'Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa. Viverra dignissim ac vitae interdum consequat elementum sed.'
+                                        'Our team is comprised of professional developers and well known marketers. We stand by delivering on what we say and when we say.'
                                     ]}
                                     typeSpeed={40}
                                     cursorChar={''}
@@ -254,7 +295,6 @@ export default function Home() {
 
                         </div>
 
-
                     </div>
                 </div>
 
@@ -262,13 +302,26 @@ export default function Home() {
 
             {/* UPGRADE TO BOT */}
 
-            <div className="lg:py-12 py-5 lg:px-20 px-5 container mx-auto">
+            <div id='services' className="lg:py-12 py-5 lg:px-20 px-5 container mx-auto">
 
                 <div className="lg:flex gap-12">
 
-                    <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100 lg:hidden block text-center'>
-                        UPGRADE TO BOT
-                    </h2>
+                    <div className='lg:w-5/12 w-full lg:hidden block text-center'>
+
+                        <h2 className='md:text-4xl text-2xl font-coolvetica font-bold mt-12'>
+                            UPGRADE TO BOT
+                        </h2>
+                        <p className="py-5 font-inter">
+                            <Typed
+                                strings={[
+                                    'It will cost you to upgrade the bot, develop the bot or promote on our bot, all paid in $AIDoge token. 50% of tokens paid from buyers will be airdropped to all holders, the remaining 50% we will use for future development. However, it is not ruled out that we will burn it.'
+                                ]}
+                                typeSpeed={40}
+                                cursorChar={''}
+
+                            />
+                        </p>
+                    </div>
 
                     <div className="lg:flex gap-6 my-8">
 
@@ -347,9 +400,22 @@ export default function Home() {
 
                     </div>
 
-                    <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100 mt-12 lg:block hidden'>
-                        UPGRADE TO BOT
-                    </h2>
+                    <div className='lg:w-5/12 w-full'>
+
+                        <h2 className='md:text-4xl text-2xl font-coolvetica font-bold mt-12 lg:block hidden'>
+                            UPGRADE TO BOT
+                        </h2>
+                        <p className="py-5 font-inter">
+                            <Typed
+                                strings={[
+                                    'It will cost you to upgrade the bot, develop the bot or promote on our bot, all paid in $AIDoge token. 50% of tokens paid from buyers will be airdropped to all holders, the remaining 50% we will use for future development. However, it is not ruled out that we will burn it.'
+                                ]}
+                                typeSpeed={40}
+                                cursorChar={''}
+
+                            />
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -378,12 +444,12 @@ export default function Home() {
 
                         <div className='border-2 border-pink-100 p-5 font-inter'>
 
-                            <h3 className='text-xl font-semibold pt-5'>Developement - 1%</h3>
+                            <h3 className='text-xl font-semibold pt-5'>Developement - 2%</h3>
 
                             <p className="py-6">
                                 <Typed
                                     strings={[
-                                        'Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa. Viverra dignissim ac vitae interdum consequat elementum sed.'
+                                        'Covers costs related to maintenance improvements of the AIDogeBot.'
                                     ]}
                                     typeSpeed={40}
                                     cursorChar={''}
@@ -395,12 +461,12 @@ export default function Home() {
 
                         <div className='border-2 border-pink-100 p-5 font-inter'>
 
-                            <h3 className='text-xl font-semibold pt-5'>Marketing - 1%</h3>
+                            <h3 className='text-xl font-semibold pt-5'>Marketing - 2%</h3>
 
                             <p className="py-6">
                                 <Typed
                                     strings={[
-                                        'Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa. Viverra dignissim ac vitae interdum consequat elementum sed.'
+                                        'Gives our community exposure and helps us to grow'
                                     ]}
                                     typeSpeed={40}
                                     cursorChar={''}
@@ -417,7 +483,7 @@ export default function Home() {
                             <p className="py-6">
                                 <Typed
                                     strings={[
-                                        'Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa. Viverra dignissim ac vitae interdum consequat elementum sed.'
+                                        'Supports AI Research by donating to the team behind AIDoge.'
                                     ]}
                                     typeSpeed={40}
                                     cursorChar={''}
@@ -432,71 +498,28 @@ export default function Home() {
 
             {/* roadmap */}
 
-            <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto text-white-100">
+            <div id='features' className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto text-white-100">
                 <div className="">
                     <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100 text-center'>
                         ROADMAP
                     </h2>
 
-                    <div className="lg:p-8 p-4 border-2 border-pink-100 mt-12 mb-6 font-inter">
-                        <div className="lg:flex gap-8">
-                            <div className="flex gap-8 items-center">
-                                <div>
-                                    <img src={r_1} alt="" className='roadmap-img' />
-                                </div>
-                                <div className='flex flex-col gap-y-6'>
-                                    <img src={r_2} alt="" className='roadmap-img' />
-                                    <img src={r_3} alt="" className='roadmap-img' />
-                                </div>
-                            </div>
+                    <Slider />
 
-                            <div className='lg:w-5/12 w-full lg:pt-0 pt-5'>
-                                <h3 className="text-2xl font-bold">
-                                    Lorem Ipsum
-                                </h3>
-
-                                <p className="py-5">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                                </p>
-
-                                <button className="rounded-lg border-2 border-white-100 px-5 py-2">
-                                    Completed
-                                </button>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                    <img src={roadmap} alt="" />
                 </div>
 
             </div>
 
             {/* token listing */}
 
-            <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
+            <div id='updates' className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
                 <div className=" text-center">
                     <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100'>
                         TOKEN LISTINGS
                     </h2>
 
                     <div className="flex justify-center items-center gap-2">
-                        <div className="bg-pink-50 rounded-lg">
-                            <img src={b_1} alt="" />
-                        </div>
-                        <div className="bg-pink-50 p-2 rounded-lg">
-                            <img src={b_2} alt="" />
-                        </div>
-                        <div className="bg-pink-50 p-2 rounded-lg">
-                            <img src={b_3} alt="" />
-                        </div>
-                        <div className="bg-pink-50 p-2 rounded-lg">
-                            <img src={b_4} alt="" />
-                        </div>
-                        <div className="bg-pink-50 p-2 rounded-lg">
-                            <img src={b_5} alt="" />
-                        </div>
+                        <img src={soon} alt="" />
                     </div>
                 </div>
 
