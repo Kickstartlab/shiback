@@ -13,7 +13,6 @@ import r_8 from '../assets/r-8.png';
 import r_9 from '../assets/r-9.png';
 
 
-
 function ImageSlider() {
     let settings = {
         dots: false,
@@ -55,7 +54,6 @@ function ImageSlider() {
         }]
     }
 
-    const [show, setShow] = useState(false);
 
     const slider = React.useRef(null);
 
@@ -171,16 +169,11 @@ function ImageSlider() {
                         2023
                     </button>
 
-                    <button onClick={() => slider?.current?.slickNext() && setShow(!show)} className="absolute -mt-3 left-1/3 text-lg font-inter">
+                    <button onClick={() => slider?.current?.slickNext()} className="absolute -mt-3 left-1/3 text-lg font-inter">
                         <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="11.5" cy="11.5" r="10" stroke="#EF09DA" stroke-width="3" fill="#06071B" />
                         </svg>
 
-                        {show ?
-                            <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="19.5" cy="19.5" r="19.5" fill="#EF09DA" />
-                            </svg>
-                            : null}
                         2023
                     </button>
 

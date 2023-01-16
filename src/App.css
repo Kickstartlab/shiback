@@ -8,12 +8,13 @@
   font-family: 'coolvetica';
 } */
 
+/* 
 .bg-blue {
   background-image: url(../src/assets/bg-blue.png);
-  background-position: center;
+  background-position: center right;
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 
 .bg-img {
   background-image: url(../src/assets/blue.png);
@@ -50,7 +51,14 @@
   border-radius: 32px;
 }
 
+.img-item {
+  position: relative;
+  z-index: 1;
+}
 
+.sidebar {
+  opacity: 0.9;
+}
 
 .img-item::after,
 .img-item::before {
@@ -83,6 +91,10 @@
   transform: translateZ(4px);
 }
 
+.text-outline {
+  -webkit-text-stroke: 2px #EF09DA;
+  letter-spacing: 0.3em;
+}
 
 @media only screen and (max-width: 768px) {
 

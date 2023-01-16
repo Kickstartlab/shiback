@@ -11,15 +11,15 @@ import rocket from '../assets/rocket.png';
 import shield from '../assets/shield.png';
 import ai from '../assets/ai.png';
 import bulb from '../assets/bulb.png';
-import b_1 from '../assets/b-1.png';
-import b_2 from '../assets/b-2.png';
-import b_3 from '../assets/b-3.png';
-import b_4 from '../assets/b-4.png';
-import b_5 from '../assets/b-5.png';
-import soon from '../assets/soon.png';
+import scroll from '../assets/scroll.png';
 import hand from '../assets/hand.png';
+import side_1 from '../assets/side-1.png';
+import side from '../assets/side.png';
+import circle_top from '../assets/circle-top.png';
+import doge from '../assets/doge.png';
 import Typed from "react-typed"
 import Slider from './Slider';
+
 
 
 export default function Home() {
@@ -31,62 +31,51 @@ export default function Home() {
 
             <div className="bg-blue">
 
+                <div className="circle absolute top-5 w-1/2 left-48 lg:block hidden">
+                    <img src={circle_top} alt="" className='' />
+                </div>
+
                 <div className="lg:px-20 px-5 container mx-auto md:block hidden">
                     <Menu />
-                    <div className="lg:flex block justify-between items-center py-12">
-                        <div className="text-white-100">
+                    <div className="lg:flex block justify-between gap-12 items-center py-12">
+                        <div className="text-white-100 w-1/2">
                             <h2 className='md:text-6xl text-3xl font-coolvetica font-bold text-black-100'>
                                 <Typed
                                     strings={[
-                                        'Free to use, cross'
+                                        'Free to use, cross splatform artificial intelligence that is here to stay'
                                     ]}
-                                    typeSpeed={40}
-                                    cursorChar={''}
-
-                                />
-                            </h2>
-                            <h2 className='md:text-6xl text-3xl pt-3 font-coolvetica font-bold text-black-100'>
-                                <Typed
-                                    strings={[
-                                        'platform artificial'
-                                    ]}
-                                    typeSpeed={40}
-                                    cursorChar={''}
-
-                                />
-                            </h2>
-                            <h2 className='md:text-6xl text-3xl pt-3 font-coolvetica font-bold text-black-100'>
-                                <Typed
-                                    strings={[
-                                        'intelligence that is here to stay'
-                                    ]}
-                                    typeSpeed={40}
+                                    typeSpeed={50}
                                     cursorChar={''}
 
                                 />
                             </h2>
                         </div>
 
-                        <div className="font-inter">
-                            <img src={top} alt="Logo" className="lg:w-10/12 lg:float-right lg:mt-0 mt-8" />
+                        <div className="w-1/2">
+                            <img src={doge} alt="Logo" className="lg:float-right lg:mt-0 mt-8" />
                         </div>
 
                     </div>
 
                 </div>
 
+                <a href='#project' className="py-8 flex flex-col items-center justify-center gap-y-5 font-inter hover:text-pink-100">
+                    <p className="">
+                        Scroll down
+                    </p>
+                    <img src={scroll} alt="" className='animate-bounce' />
+                </a>
+
                 <div className="md:hidden block">
                     <Menu />
 
                     <div className="text-white-100 flex flex-col items-center py-20">
 
-                        <h2 className='text-5xl font-coolvetica font-bold text-black-100'>
+                        <h2 className='text-5xl font-coolvetica font-bold px-5'>
                             Free to use, cross
-                        </h2>
-                        <h2 className='text-5xl pt-3 font-coolvetica font-bold text-black-100'>
+
                             platform artificial
-                        </h2>
-                        <h2 className='text-5xl pt-3 font-coolvetica font-bold text-black-100'>
+
                             intelligence that is here to stay
                         </h2>
 
@@ -98,7 +87,7 @@ export default function Home() {
 
             {/* projects-section */}
 
-            <div className="bg-img">
+            <div id='project' className="">
 
                 <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
                     <div className="lg:flex items-center justify-between">
@@ -202,10 +191,14 @@ export default function Home() {
 
             {/* why choose us */}
 
+            <div className="circle absolute left-0 lg:block hidden">
+                <img src={side} alt="" className='' />
+            </div>
+
             <div id='about' className="">
 
                 <div className="flex lg:mb-12 items-center gap-32">
-                    <img src={hand} alt="" className='lg:block hidden'/>
+                    <img src={hand} alt="" className='lg:block hidden' />
 
                     <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100'>
                         Why choose Us?
@@ -219,7 +212,7 @@ export default function Home() {
                     <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-6 my-8">
 
                         <div className='border-2 border-pink-100 p-5 font-inter'>
-                            <div className="flex items-center justify-between">
+                            <div className="flex items-center justify-between gap-6">
                                 <img src={rocket} alt="" />
                                 <h3 className='text-xl font-semibold'>Mass
                                     Exposure</h3>
@@ -239,7 +232,7 @@ export default function Home() {
                         </div>
 
                         <div className='border-2 border-pink-100 p-5 font-inter'>
-                            <div className="flex items-center justify-between">
+                            <div className="flex items-center justify-between gap-6">
                                 <img src={shield} alt="" />
                                 <h3 className='text-xl font-semibold'>Safety</h3>
                             </div>
@@ -258,7 +251,7 @@ export default function Home() {
                         </div>
 
                         <div className='border-2 border-pink-100 p-5 font-inter'>
-                            <div className="flex items-center justify-between">
+                            <div className="flex items-center justify-between gap-6">
                                 <img src={ai} alt="" />
                                 <h3 className='text-xl font-semibold'>In House Development</h3>
                             </div>
@@ -277,7 +270,7 @@ export default function Home() {
                         </div>
 
                         <div className='border-2 border-pink-100 p-5 font-inter'>
-                            <div className="flex items-center justify-between">
+                            <div className="flex items-center justify-between gap-6">
                                 <img src={bulb} alt="" />
                                 <h3 className='text-xl font-semibold'>Experienced Team</h3>
                             </div>
@@ -419,10 +412,14 @@ export default function Home() {
                 </div>
             </div>
 
+            <div className="circle absolute right-0 -mt-32 lg:block hidden">
+                <img src={side_1} alt="" className='' />
+            </div>
 
             {/* tokenomics */}
 
             <div className="bg-line">
+
 
                 <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
                     <div className=" text-center">
@@ -492,8 +489,11 @@ export default function Home() {
 
                         </div>
                     </div>
-                </div>
 
+                    <div className="circle absolute left-0 -mt-32 lg:block hidden">
+                        <img src={side} alt="" className='' />
+                    </div>
+                </div>
             </div>
 
             {/* roadmap */}
@@ -514,12 +514,14 @@ export default function Home() {
 
             <div id='updates' className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
                 <div className=" text-center">
-                    <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100'>
+                    <h2 className='md:text-4xl text-2xl font-coolvetica font-bold'>
                         TOKEN LISTINGS
                     </h2>
 
-                    <div className="flex justify-center items-center gap-2">
-                        <img src={soon} alt="" />
+                    <div className="flex justify-center pt-8">
+                        <h2 className='md:text-7xl text-blue-50 text-3xl font-coolvetica font-bold uppercase text-outline'>
+                            coming soon
+                        </h2>
                     </div>
                 </div>
 
