@@ -12,7 +12,6 @@ import r_7 from '../assets/r-7.png';
 import r_8 from '../assets/r-8.png';
 import r_9 from '../assets/r-9.png';
 
-
 function ImageSlider() {
     let settings = {
         dots: false,

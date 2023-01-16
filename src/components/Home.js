@@ -57,14 +57,13 @@ export default function Home() {
 
                     </div>
 
+                    <a href='#project' className="py-8 flex flex-col items-center justify-center gap-y-5 font-inter hover:text-pink-100">
+                        <p className="">
+                            Scroll to explore
+                        </p>
+                        <img src={scroll} alt="" className='animate-bounce' />
+                    </a>
                 </div>
-
-                <a href='#project' className="py-8 flex flex-col items-center justify-center gap-y-5 font-inter hover:text-pink-100">
-                    <p className="">
-                        Scroll down
-                    </p>
-                    <img src={scroll} alt="" className='animate-bounce' />
-                </a>
 
                 <div className="md:hidden block">
                     <Menu />
@@ -295,7 +294,7 @@ export default function Home() {
 
             {/* UPGRADE TO BOT */}
 
-            <div id='services' className="lg:py-12 py-5 lg:px-20 px-5 container mx-auto">
+            <div className="lg:py-12 py-5 lg:px-20 px-5 container mx-auto">
 
                 <div className="lg:flex gap-12">
 
@@ -418,7 +417,7 @@ export default function Home() {
 
             {/* tokenomics */}
 
-            <div className="bg-line">
+            <div id='tokenomics' className="bg-line">
 
 
                 <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
@@ -498,7 +497,7 @@ export default function Home() {
 
             {/* roadmap */}
 
-            <div id='features' className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto text-white-100">
+            <div id='roadmap' className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto text-white-100">
                 <div className="">
                     <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100 text-center'>
                         ROADMAP
@@ -512,7 +511,7 @@ export default function Home() {
 
             {/* token listing */}
 
-            <div id='updates' className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
+            <div id='contract' className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
                 <div className=" text-center">
                     <h2 className='md:text-4xl text-2xl font-coolvetica font-bold'>
                         TOKEN LISTINGS

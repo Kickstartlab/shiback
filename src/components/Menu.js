@@ -69,7 +69,7 @@ export default function Menu() {
 
       </div>
 
-      {show ? <div className="sidebar duration-300 fixed top-0 bottom-0 lg:w-1/2 w-3/4 right-0 px-8 py-5 overflow-y-auto text-center font-inter font-semibold bg-blue-50 z-20">
+      {show ? <div className="sidebar duration-300 fixed top-0 bottom-0 lg:w-1/2 w-full right-0 px-8 py-5 overflow-y-auto text-center font-inter font-semibold bg-blue-50">
 
         <div className="pb-8">
           <div className="mt-1 flex items-center justify-between">
@@ -85,19 +85,19 @@ export default function Menu() {
             </button>
           </div>
         </div>
-        <button onClick={() => setShow(!show)} className="p-2.5 w-full hover:bg-white-100 mt-5 flex items-center rounded-md duration-300 lg:text-xl font-inter md:text-lg hover:text-pink-100">
+        <button onClick={() => setShow(!show)} className="p-2.5 w-full mt-5 flex items-center rounded-md duration-300 lg:text-xl font-inter md:text-lg hover:text-pink-100">
           <a href="/">Home</a>
         </button>
-        <button onClick={() => setShow(!show)} className="p-2.5 w-full hover:bg-white-100 mt-5 flex items-center rounded-md duration-300 lg:text-xl font-inter md:text-lg hover:text-pink-100">
+        <button onClick={() => setShow(!show)} className="p-2.5 w-full mt-5 flex items-center rounded-md duration-300 lg:text-xl font-inter md:text-lg hover:text-pink-100">
           <a href="#about">About</a>
         </button>
-        <button onClick={() => setShow(!show)} className="p-2.5 w-full hover:bg-white-100 mt-5 flex items-center rounded-md duration-300 lg:text-xl font-inter md:text-lg hover:text-pink-100">
+        <button onClick={() => setShow(!show)} className="p-2.5 w-full mt-5 flex items-center rounded-md duration-300 lg:text-xl font-inter md:text-lg hover:text-pink-100">
           <a href="#tokenomics">Tokenomics</a>
         </button>
-        <button onClick={() => setShow(!show)} className="p-2.5 w-full hover:bg-white-100 mt-5 flex items-center rounded-md duration-300 lg:text-xl font-inter md:text-lg hover:text-pink-100">
+        <button onClick={() => setShow(!show)} className="p-2.5 w-full mt-5 flex items-center rounded-md duration-300 lg:text-xl font-inter md:text-lg hover:text-pink-100">
           <a href="#roadmap">Roadmap</a>
         </button>
-        <button onClick={() => setShow(!show)} className="p-2.5 w-full hover:bg-white-100 mt-5 flex items-center rounded-md duration-300 lg:text-xl font-inter md:text-lg hover:text-pink-100">
+        <button onClick={() => setShow(!show)} className="p-2.5 w-full mt-5 flex items-center rounded-md duration-300 lg:text-xl font-inter md:text-lg hover:text-pink-100">
           <a href="#contact">Contract</a>
         </button>
       </div> : null
