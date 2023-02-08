@@ -169,7 +169,7 @@ export default function Home() {
 
                             </div>
 
-                            <div className="border-l border-white-100 lg:mt-5 mt-3 mb-3 h-14">
+                            <div className="border-l border-white-100 lg:mt-5 mt-0 mb-3 h-14">
 
                             </div>
 
@@ -202,7 +202,7 @@ export default function Home() {
 
                             </div>
 
-                            <div className="border-l border-white-100 lg:mt-5 mt-3 mb-3 h-14">
+                            <div className="border-l border-white-100 lg:mt-5 mt-0 mb-3 h-14">
 
                             </div>
 
@@ -235,7 +235,7 @@ export default function Home() {
 
                             </div>
 
-                            <div className="border-l border-white-100 lg:mt-5 mt-3 mb-3 h-14">
+                            <div className="border-l border-white-100 lg:mt-5 mt-0 mb-3 h-14">
 
                             </div>
 
@@ -268,7 +268,7 @@ export default function Home() {
 
                             </div>
 
-                            <div className="border-l border-white-100 lg:mt-5 mt-3 mb-3 h-14">
+                            <div className="border-l border-white-100 lg:mt-5 mt-0 mb-3 h-14">
 
                             </div>
 
