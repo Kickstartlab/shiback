@@ -35,7 +35,7 @@ export default function Home() {
                             <div className=" lg:w-1/2">
 
                                 <div className="font-semibold">
-                                    Introducing <span className="text-blue-50"> SHIBACK</span>
+                                    Introducing <span className="text-blue-50 uppercase"> shibarium</span>
                                 </div>
                                 <h1 className="text-blue-100 md:text-6xl text-2xl leading-loose font-chucklesome font-bold">
                                     Gorem ipsum dolor
@@ -48,12 +48,12 @@ export default function Home() {
 
                                 <div className="font-work flex items-center gap-5 mt-6">
                                     <a href="https://app.uniswap.org/">
-                                        <button className="text-white-100 px-8 py-3 bg-blue-50 rounded-full font-semibold hover:bg-white-100 hover:text-blue-100">
+                                        <button className="text-white-100 lg:px-8 px-5 py-3 bg-blue-50 rounded-full font-semibold hover:bg-white-100 hover:text-blue-100">
                                             Get Started
                                         </button>
                                     </a>
                                     <a href="https://www.dextools.io/app/en/ether/pair-explorer/0xa7214ef7b12eb7445a78fd5e31ed0dd7120f4dce">
-                                        <button className="px-8 py-3 hover:bg-blue-50 bg-white-100 text-blue-100 hover:text-white-100 rounded-full font-semibold">
+                                        <button className="lg:px-8 px-5 py-3 hover:bg-blue-50 bg-white-100 text-blue-100 hover:text-white-100 rounded-full font-semibold">
                                             Whitepaper
                                         </button>
                                     </a>
@@ -71,7 +71,7 @@ export default function Home() {
             </div>
 
 
-            {/*  What Is SHIBACK */}
+            {/*  What Is shibarium */}
 
             <div id='about' className="">
 
@@ -79,7 +79,7 @@ export default function Home() {
 
                     <div className="text-center">
                         <h1 className="text-blue-100 md:text-6xl text-2xl leading-loose font-chucklesome font-bold">
-                            What Is SHIBACK
+                            What Is shibarium
                         </h1>
                     </div>
 
@@ -106,7 +106,7 @@ export default function Home() {
 
                     </div>
 
-                    <div className="lg:flex items-center justify-between gap-6">
+                    <div className="lg:flex items-baseline justify-between gap-6 space-y-6">
 
                         <div className="rounded-xl bg-yellow-50 p-6">
                             <img src={about} alt="" />
@@ -169,7 +169,7 @@ export default function Home() {
 
                             </div>
 
-                            <div className="border-l border-white-100 mt-5 my-3 h-14">
+                            <div className="border-l border-white-100 lg:mt-5 mt-3 mb-3 h-14">
 
                             </div>
 
@@ -202,7 +202,7 @@ export default function Home() {
 
                             </div>
 
-                            <div className="border-l border-white-100 mt-5 my-3 h-14">
+                            <div className="border-l border-white-100 lg:mt-5 mt-3 mb-3 h-14">
 
                             </div>
 
@@ -235,7 +235,7 @@ export default function Home() {
 
                             </div>
 
-                            <div className="border-l border-white-100 mt-5 my-3 h-14">
+                            <div className="border-l border-white-100 lg:mt-5 mt-3 mb-3 h-14">
 
                             </div>
 
@@ -268,7 +268,7 @@ export default function Home() {
 
                             </div>
 
-                            <div className="border-l border-white-100 mt-5 my-3 h-14">
+                            <div className="border-l border-white-100 lg:mt-5 mt-3 mb-3 h-14">
 
                             </div>
 
