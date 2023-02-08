@@ -10,7 +10,7 @@ export default function Footer() {
     <div className="text-blue-100 font-montserat">
       <footer className='container mx-auto lg:px-12 font-montserat px-5'>
         <div className="lg:flex items-baseline justify-between gap-12 py-8 space-y-6">
-          <div className="col-span-1">
+          <div className="col-span-1 w-full">
 
             <a href="/" className="lg:my-12">
               <h3 className="text-blue-100 md:text-4xl text-2xl leading-loose font-chucklesome font-bold">
@@ -38,7 +38,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="col-span-1">
+          <div className="col-span-1 w-full">
             <h5 className="font-bold text-xl text-blue-100 pb-5">
               Quick Links
             </h5>
