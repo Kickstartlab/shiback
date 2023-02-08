@@ -14,7 +14,7 @@ import r_9 from '../assets/r-9.png';
 
 function ImageSlider() {
     let settings = {
-        dots: false,
+        dots: true,
         infinite: false,
         speed: 500,
         slidesToShow: 1,
@@ -23,12 +23,43 @@ function ImageSlider() {
         arrows: false,
         cssEase: "linear",
         autoplaySpeed: 2000,
+        appendDots: dots => (
+            <div
+                style={{
+                    borderBottom: "2px solid #EF09DA",
+                }}
+            >
+                <ul style={{
+                    margin: "-10px",
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    columnGap: "26%",
+
+                }}> {dots} </ul>
+            </div>
+        ),
+        customPaging: i => (
+            <div
+                style={{
+                    width: "30px",
+                    height: "30px",
+                    color: "transparent",
+                    border: "2px solid #EF09DA",
+                    borderRadius: "50%",
+                }}
+            >
+                {i++}
+            </div>
+        ),
 
         responsive: [{
             breakpoint: 1024,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
+                dots: false,
             }
 
         }, {
@@ -36,7 +67,7 @@ function ImageSlider() {
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 2,
-                dots: true,
+                dots: false,
                 infinite: true,
 
             }
@@ -45,7 +76,7 @@ function ImageSlider() {
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                dots: true,
+                dots: false,
                 infinite: true,
                 autoplay: false,
                 autoplaySpeed: 2000,
@@ -154,44 +185,59 @@ function ImageSlider() {
                     </div>
                 </div>
 
+                <div className="lg:p-8 p-4 border-2 border-pink-100 mt-12 mb-6 font-inter">
+                    <div className="lg:flex gap-8">
+                        <div className="flex gap-8 items-center">
+                            <div>
+                                <img src={r_1} alt="" className='roadmap-img' />
+                            </div>
+                            <div className='flex flex-col gap-y-6'>
+                                <img src={r_2} alt="" className='roadmap-img' />
+                                <img src={r_3} alt="" className='roadmap-img' />
+                            </div>
+                        </div>
+
+                        <div className='lg:w-5/12 w-full lg:pt-0 pt-5'>
+                            <h3 className="text-2xl font-bold">
+                                Twitter Bot
+                                Release
+                            </h3>
+
+                            <p className="py-5">
+                                The AIDoge bot for Twitter is 100% free to use for anyone with access to Twitter. The AIDoge Twitter bot uses DogeGPT for text-based responses and Stable Diffusion for image generation. When used properly, the bot will reply to your tweet with an Ai generated response or image.
+                            </p>
+
+                            <button className="rounded-lg border-2 border-white-100 px-5 py-2">
+                                Completed
+                            </button>
+                        </div>
+
+
+                    </div>
+                </div>
+
             </Slider>
 
             <div className="pt-8">
 
-                <div className="progressbar-line border-b-2 border-pink-100 lg:flex hidden text-white-100 ">
+                    <div className=" lg:flex text-lg font-inter items-center justify-center hidden text-white-100 mt-3" style={{columnGap: "26%"}}>
 
-                    <button onClick={() => slider?.current?.slickPrev()} className="absolute -mt-4 text-lg font-inter">
-                        <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="19.5" cy="19.5" r="19.5" fill="#EF09DA" />
-                        </svg>
+                        <button className="ml-12">
+                            2023
+                        </button>
 
-                        2023
-                    </button>
+                        <button className="">
+                            2023
+                        </button>
 
-                    <button onClick={() => slider?.current?.slickNext()} className="absolute -mt-3 left-1/3 text-lg font-inter">
-                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="11.5" cy="11.5" r="10" stroke="#EF09DA" stroke-width="3" fill="#06071B" />
-                        </svg>
+                        <button className="">
+                            2024
+                        </button>
 
-                        2023
-                    </button>
-
-                    <button onClick={() => slider?.current?.slickNext()} className="absolute -mt-3 right-1/3 text-lg font-inter">
-                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="11.5" cy="11.5" r="10" stroke="#EF09DA" stroke-width="3" fill="#06071B" />
-                        </svg>
-
-                        2024
-                    </button>
-
-                    <button className="absolute -mt-3 right-0 mr-28 text-lg font-inter">
-                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="11.5" cy="11.5" r="10" stroke="#EF09DA" stroke-width="3" fill="#06071B" />
-                        </svg>
-
-                        Coming soon
-                    </button>
-                </div>
+                        <button className="">
+                            Coming soon
+                        </button>
+                    </div>
 
                 <div className="progressbar-line border-b-2 border-pink-100 lg:hidden flex text-white-100 ">
 

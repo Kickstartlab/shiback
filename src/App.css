@@ -8,13 +8,21 @@
   font-family: 'coolvetica';
 } */
 
-/* 
+
 .bg-blue {
   background-image: url(../src/assets/bg-blue.png);
-  background-position: center right;
-  background-size: cover;
+  background-position: top right;
   background-repeat: no-repeat;
-} */
+  height: 120vh;
+  background-blend-mode: screen;
+  mix-blend-mode: screen;
+
+}
+
+.bg-top {
+  background-blend-mode: screen;
+  mix-blend-mode: screen;
+}
 
 .bg-img {
   background-image: url(../src/assets/blue.png);
@@ -66,6 +74,7 @@
   content: '';
   position: absolute;
   z-index: -1;
+  max-width: 520px;
   width: 100%;
   height: 100%;
   top: 0;
@@ -75,6 +84,13 @@
   background: linear-gradient(191.32deg, #7B2EB0 -118.59%, #C584F5 15.64%, #DACEE1 56.18%, #0D2986 97.62%, #481CBB 131.68%, #142D8E 131.68%);
   border-radius: 37.6528px;
   transform: matrix(0.97, -0.1, 0.25, 0.99, 0, 0);
+}
+
+li.slick-active {
+  background: #EF09DA !important;
+  border-radius: 50%;
+  width: 30px !important;
+  height: 30px !important;
 }
 
 .img-item::before {
@@ -99,11 +115,15 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 60vh;
+
   }
 
   .img-item {
-    max-width: 320px;
+    max-width: 290px;
     width: 100%;
+    display: flex;
+    margin: 0 auto;
   }
 
   .img-item::after,

@@ -5,23 +5,23 @@ module.exports = {
     extend: {},
     colors: {
       seagreen: {
-        "50": "#F5F9FF",
-        "100": "#03E6B6",
-        "200": "#00CEEA",
+        "50": "#F4F5FA",
       },
       blue: {
-        "50": "#06071B",
+        "50": "#1F33D8",
+        "100": "#0E133A",
+        "200": "#13316B",
       },
       white: {
         "100": "#fff",
       },
-      pink: {
-        "50": "rgba(233, 70, 218, 0.3)",
-        "100": "#EF09DA",
+      yellow: {
+        "50": "#FFD556",
+        "100": "#F9B208",
       },
     },
     fontFamily: {
-      'coolvetica': ["'Coolvetica', sans-serif;"],
+      'montserat': ["'Montserrat', sans-serif;"],
       'inter': ["'Inter', sans-serif;"]
     }
   },
