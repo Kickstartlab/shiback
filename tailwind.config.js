@@ -15,6 +15,9 @@ module.exports = {
       white: {
         "100": "#fff",
       },
+      gray: {
+        "100": "#5B5D6D",
+      },
       yellow: {
         "50": "#FFD556",
         "100": "#F9B208",
@@ -22,7 +25,7 @@ module.exports = {
     },
     fontFamily: {
       'montserat': ["'Montserrat', sans-serif;"],
-      'inter': ["'Inter', sans-serif;"]
+      'chucklesome': ["'CHUCKLESOME', sans-serif;"]
     }
   },
   plugins: [],

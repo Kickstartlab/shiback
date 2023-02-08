@@ -2,3 +2,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "CHUCKLESOME";
+    src: url("../src/assets/fonts/CHUCKLESOME.ttf");
+  }

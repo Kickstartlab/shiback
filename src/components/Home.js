@@ -1,528 +1,194 @@
 import React from 'react'
 import Footer from './Footer'
 import Menu from './Menu'
-import blue from '../assets/blue.png';
-import p_1 from '../assets/p-1.png';
-import p_2 from '../assets/p-2.png';
+import p_1 from '../assets/p_1.png';
+import p_2 from '../assets/p_2.png';
+import p_3 from '../assets/p_3.png';
+import p_4 from '../assets/p_4.png';
 import bot from '../assets/bot.png';
-import telegram from '../assets/telegram.png';
-import twitter from '../assets/twitter.png';
-import rocket from '../assets/rocket.png';
-import shield from '../assets/shield.png';
-import ai from '../assets/ai.png';
-import bulb from '../assets/bulb.png';
-import scroll from '../assets/scroll.png';
-import hand from '../assets/hand.png';
-import side_1 from '../assets/side-1.png';
-import side from '../assets/side.png';
-import circle_top from '../assets/circle-top.png';
-import doge from '../assets/doge.png';
-import Typed from "react-typed"
-import Slider from './Slider';
+import video from '../assets/video.png';
+import about from '../assets/about.png';
+import about_1 from '../assets/about_1.png';
+import chart from '../assets/chart.png';
+import top from '../assets/top.png';
 
 
 
 export default function Home() {
 
     return (
-        <div className="bg-blue-50 text-white-100">
+        <div className="text-gray-100 font-montserat">
 
             {/* top section */}
 
-            <div className="bg-blue">
+            <div className="bg-seagreen-50">
 
                 <div className="lg:px-8 md:px-5 container mx-auto md:block hidden">
                     <Menu />
-                    <div className="lg:flex block justify-between gap-12 items-center pt-28">
-                        <div className="text-white-100 lg:w-1/2 w-full">
-                            <h2 className='md:text-6xl text-3xl font-coolvetica font-bold text-black-100'>
-                                <Typed
-                                    strings={[
-                                        'Ai Doge free to use, cross platform artificial intelligence that is here to stay'
-                                    ]}
-                                    typeSpeed={50}
-                                    cursorChar={''}
 
-                                />
-                            </h2>
+                    <div className="py-8">
+
+                        <div className="font-semibold">
+                            Introducing <span className="text-blue-50"> SHIBACK</span>
                         </div>
 
-                        <img src={doge} alt="" className='doge lg:w-1/3 w-full -mt-6' />
+                        <div className="flex items-center justify-between">
 
-                    </div>
+                            <div className=" lg:w-1/2">
+                                <h1 className="text-blue-100 md:text-6xl text-2xl leading-loose font-chucklesome font-bold">
+                                    Gorem ipsum dolor
+                                    sit amet, cons
+                                </h1>
 
-                    <a href='#project' className="py-8 flex flex-col items-center justify-center gap-y-5 font-inter hover:text-pink-100">
-                        <p className="">
-                            Scroll to explore
-                        </p>
-                        <img src={scroll} alt="" className='animate-bounce' />
-                    </a>
-                </div>
+                                <div className="py-5">
+                                    Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                                </div>
 
-                <div className="md:hidden block">
-                    <Menu />
+                                <div className="font-work flex items-center gap-5 mt-6">
+                                    <a href="https://app.uniswap.org/">
+                                        <button className="text-white-100 px-8 py-3 bg-blue-50 rounded-full font-semibold hover:bg-white-100 hover:text-blue-100">
+                                            Get Started
+                                        </button>
+                                    </a>
+                                    <a href="https://www.dextools.io/app/en/ether/pair-explorer/0xa7214ef7b12eb7445a78fd5e31ed0dd7120f4dce">
+                                        <button className="px-8 py-3 hover:bg-blue-50 bg-white-100 text-blue-100 hover:text-white-100 rounded-full font-semibold">
+                                            Whitepaper
+                                        </button>
+                                    </a>
 
-                    <div className="text-white-100 flex flex-col items-center lg:py-20 py-8">
+                                </div>
+                            </div>
 
-                        <h2 className='lg:text-5xl text-3xl font-coolvetica font-bold px-5'>
-                            Free to use, cross
-
-                            platform artificial
-
-                            intelligence that is here to stay
-                        </h2>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-            {/* projects-section */}
-
-            <div id='project' className="">
-
-                <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
-                    <div className="lg:flex items-center justify-between">
-
-                        <div className="lg:w-5/12 w-full img-item relative">
-                            <img src={p_1} alt="" className='' />
-                        </div>
-
-                        <div className="text-white-100 lg:w-5/12 w-full lg:mt-0 mt-8">
-                            <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100'>
-
-                                <Typed
-                                    strings={[
-                                        'Aidoge  on Telegram'
-                                    ]}
-                                    typeSpeed={40}
-                                    cursorChar={''}
-
-                                />
-                            </h2>
-
-                            <p className="py-6 font-inter">
-
-                                <Typed
-                                    strings={[
-                                        '    The AIDoge chatbot for telegram is 100% free to use for anyone with access to Telegram. This bot can be added to any telegram group and is also accessible via direct messaging. The AIDoge chatbot uses DogeGPT for text-based responses and Stable Diffusion for image generation. Read our documentation on how to use the Telegram bot'
-                                    ]}
-                                    typeSpeed={40}
-                                    cursorChar={''}
-
-                                />
-                            </p>
-
-                            <div className="flex gap-8 items-center">
-                                <a href='https://t.me/DogeGPTBot' className='border border-pink-100 rounded-lg font-inter lg:px-5 px-3 md:text-sm cursor-pointer py-2 flex items-center gap-3 divide-x divide-pink-100'>
-                                    <img src={bot} alt="" className='pr-2 border-r border-pink-100' />
-
-                                    Telegram Bot
-                                </a>
-
-                                <a href='https://t.me/AIDogeChat' className='border border-pink-100 rounded-lg font-inter lg:px-5 px-3 md:text-sm cursor-pointer py-2 flex items-center gap-3 divide-x divide-pink-100'>
-                                    <img src={telegram} alt="" className='pr-2 border-r border-pink-100' />
-
-                                    Official Telegram
-                                </a>
+                            <div className="img md:mt-0 mt-12 lg:w-1/2">
+                                <img src={top} alt="Logo" className='w-10/12 lg:float-right' />
                             </div>
                         </div>
-
-                    </div>
-                </div>
-
-                <div className="lg:py-12 py-5 lg:px-20 px-5 container mx-auto text-white-100 ">
-                    <div className="lg:flex items-center justify-between">
-
-                        <div className="lg:w-5/12 w-full lg:pb-0 pb-12">
-                            <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100'>
-                                <Typed
-                                    strings={[
-                                        ' Project on Twitter'
-                                    ]}
-                                    typeSpeed={40}
-                                    cursorChar={''}
-
-                                />
-                            </h2>
-                            <p className="py-6 font-inter">
-
-                                <Typed
-                                    strings={[
-                                        'The Aidoge bot for Twitter is 100% free to use for anyone with access to Twitter. The Aidoge Twitter bot uses ChatGDP for text-based responses and Stable Diffusion for image generation.When used properly, the bot will reply to your tweet with an Ai generated response or image. Read our documentation on how to use the Twitter bot.'
-                                    ]}
-                                    typeSpeed={40}
-                                    cursorChar={''}
-
-                                />
-                            </p>
-
-                            <div className="flex gap-8 items-center">
-                                <a href='https://twitter.com/AIDogeBsc' className='border border-pink-100 rounded-lg font-inter lg:px-5 px-3 md:text-sm cursor-pointer py-2 flex items-center gap-3 divide-x divide-pink-100'>
-                                    <img src={bot} alt="" className='pr-2 border-r border-pink-100' />
-
-                                    TWitter Bot
-                                </a>
-
-                                <a href='https://twitter.com/AIDogeBsc' className='border border-pink-100 rounded-lg font-inter lg:px-5 px-3 md:text-sm cursor-pointer py-2 flex items-center gap-3 divide-x divide-pink-100'>
-                                    <img src={twitter} alt="" className='pr-2 border-r border-pink-100' />
-
-                                    Official Twitter
-                                </a>
-                            </div>
-                        </div>
-
-                        <div className="img-item relative lg:w-5/12 w-full lg:mt-0 mt-8">
-                            <img src={p_2} alt="" />
-                        </div>
                     </div>
                 </div>
 
             </div>
 
 
-            {/* why choose us */}
-
-            <div className="circle absolute left-0 lg:block hidden">
-                <img src={side} alt="" className='' />
-            </div>
+            {/*  What Is SHIBACK */}
 
             <div id='about' className="">
 
-                <div className="flex my-12 items-center gap-32">
-                    <img src={hand} alt="" className='lg:block hidden' />
+                <div className="lg:py-20 py-5 lg:px-8 px-5 container mx-auto">
 
-                    <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100'>
-                        Why choose Us?
-                    </h2>
+                    <div className="text-center">
+                        <h1 className="text-blue-100 md:text-6xl text-2xl leading-loose font-chucklesome font-bold">
+                            What Is SHIBACK
+                        </h1>
+                    </div>
 
-                </div>
-
-                <div className="lg:pb-20 lg:px-20 px-5 container mx-auto">
-
-
-                    <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-6 my-8">
-
-                        <div className='border-2 border-pink-100 p-5 font-inter'>
-                            <div className="flex items-center justify-between gap-6">
-                                <img src={rocket} alt="" />
-                                <h3 className='text-xl font-semibold'>Mass
-                                    Exposure</h3>
-                            </div>
-
-                            <p className="py-6">
-                                <Typed
-                                    strings={[
-                                        'Over 10k requests made, 100 groups. With these numbers, we are leading the race by a mile in Telegram and Twitter Ai bots..'
-                                    ]}
-                                    typeSpeed={40}
-                                    cursorChar={''}
-
-                                />
-                            </p>
-
+                    <div className="lg:flex items-center justify-between lg:py-16 py-6">
+                        <div className="">
+                            <h2 className='md:text-4xl text-2xl font-semibold text-blue-100'>
+                                Norem ipsum dolor sit
+                                consectetur
+                            </h2>
                         </div>
 
-                        <div className='border-2 border-pink-100 p-5 font-inter'>
-                            <div className="flex items-center justify-between gap-6">
-                                <img src={shield} alt="" />
-                                <h3 className='text-xl font-semibold'>Safety</h3>
-                            </div>
+                        <div>
+                            <p>Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis  Norem ipsum dolor sit amet, consectetur</p>
 
-                            <p className="py-6">
-                                <Typed
-                                    strings={[
-                                        'Our smart contract is renounced and our team is trusted. We believe in making an impact and leaving a lasting impression.'
-                                    ]}
-                                    typeSpeed={40}
-                                    cursorChar={''}
+                            <a href="/" className='text-blue-50 font-semibold pt-5 flex gap-4'>
+                                Explore Ecosystem
 
-                                />
-                            </p>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                </svg>
 
+                            </a>
                         </div>
 
-                        <div className='border-2 border-pink-100 p-5 font-inter'>
-                            <div className="flex items-center justify-between gap-6">
-                                <img src={ai} alt="" />
-                                <h3 className='text-xl font-semibold'>In House Development</h3>
-                            </div>
+                    </div>
 
-                            <p className="py-6">
-                                <Typed
-                                    strings={[
-                                        'All development is done by members of the team who are active users of the products we produce. The vision we have is the creation we make.'
-                                    ]}
-                                    typeSpeed={40}
-                                    cursorChar={''}
+                    <div className="flex items-center justify-between gap-6">
 
-                                />
-                            </p>
-
+                        <div className="rounded-xl bg-yellow-50 p-6">
+                            <img src={about} alt="" />
                         </div>
 
-                        <div className='border-2 border-pink-100 p-5 font-inter'>
-                            <div className="flex items-center justify-between gap-6">
-                                <img src={bulb} alt="" />
-                                <h3 className='text-xl font-semibold'>Experienced Team</h3>
-                            </div>
-
-                            <p className="py-6">
-                                <Typed
-                                    strings={[
-                                        'Our team is comprised of professional developers and well known marketers. We stand by delivering on what we say and when we say.'
-                                    ]}
-                                    typeSpeed={40}
-                                    cursorChar={''}
-
-                                />
-                            </p>
-
+                        <div className="">
+                            <img src={video} alt="" />
+                            <img src={about_1} alt="" className='absolute ml-64 -mt-80' />
                         </div>
-
                     </div>
                 </div>
 
             </div>
 
-            {/* UPGRADE TO BOT */}
 
-            <div className="lg:py-12 py-5 lg:px-20 px-5 container mx-auto">
+            {/* TOKENOMICS */}
 
-                <div className="lg:flex gap-12">
+            <div id='tokenomics' className="">
 
-                    <div className='lg:w-5/12 w-full lg:hidden block text-center'>
+                <div className="lg:py-20 py-5 lg:px-8 px-5 container mx-auto">
 
-                        <h2 className='md:text-4xl text-2xl font-coolvetica font-bold mt-12'>
-                            UPGRADE TO BOT
-                        </h2>
-                        <p className="py-5 font-inter">
-                            <Typed
-                                strings={[
-                                    'It will cost you to upgrade the bot, develop the bot or promote on our bot, all paid in $DogeGPT token. 50% of tokens paid from buyers will be airdropped to all holders, the remaining 50% we will use for future development. However, it is not ruled out that we will burn it.'
-                                ]}
-                                typeSpeed={40}
-                                cursorChar={''}
-
-                            />
-                        </p>
-                    </div>
-
-                    <div className="lg:flex gap-6 my-8">
-
-                        <div className='bg_1 p-5 font-inter flex flex-col items-center justify-center'>
-                            <h3 className='lg:text-3xl text-2xl font-semibold text-center'>Private
-                                Package</h3>
-
-                            <ul className="list-disc text-lg font-semibold my-6 lg:h-72 ml-0">
-                                <li>
-                                    Basic Plan
-                                </li>
-                                <li>
-                                    $10/ month
-                                </li>
-                                <li>
-                                    Billed yearly
-                                </li>
-                                <li>
-                                    Pay with $DogeGPT
-                                </li>
-                            </ul>
-
-                            <button className="border-2 border-white-100 px-5 py-2 rounded-full hover:bg-pink-100">
-                                Subscribe
-                            </button>
-                        </div>
-
-                        <div className='bg_2 p-5 font-inter flex flex-col items-center justify-center lg:mt-0 mt-5'>
-                            <h3 className='lg:text-3xl text-2xl font-semibold text-center'>Channel
-                                Package</h3>
-
-
-                            <ul className="list-disc text-lg font-semibold my-6 lg:h-72 ml-0">
-                                <li>
-                                    Pro Plan
-                                </li>
-                                <li>
-                                    $48/ month
-                                </li>
-                                <li>
-                                    Billed vearlv
-                                </li>
-                                <li>
-                                    Pav with $DogeGPT
-                                </li>
-                            </ul>
-
-                            <button className="border-2 border-white-100 px-5 py-2 rounded-full hover:bg-pink-100">
-                                Subscribe
-                            </button>
-                        </div>
-
-                        <div className='bg_3 p-5 font-inter flex flex-col items-center justify-center lg:mt-0 mt-5'>
-                            <h3 className='lg:text-3xl text-2xl font-semibold text-center'>Group
-                                Package</h3>
-
-                            <ul className="list-disc text-lg font-semibold my-6 lg:h-72 ml-0">
-                                <li>
-                                    Basic Plan
-                                </li>
-                                <li>
-                                    $48/ month
-                                </li>
-                                <li>
-                                    Billed yearly
-                                </li>
-                                <li>
-                                    Pay with $DogeGPT
-                                </li>
-                            </ul>
-
-                            <button className="border-2 border-white-100 px-5 py-2 rounded-full hover:bg-pink-100">
-                                Subscribe
-                            </button>
-                        </div>
-
-                    </div>
-
-                    <div className='lg:w-5/12 w-full'>
-
-                        <h2 className='md:text-4xl text-2xl font-coolvetica font-bold mt-12 lg:block hidden'>
-                            UPGRADE TO BOT
-                        </h2>
-                        <p className="py-5 font-inter">
-                            <Typed
-                                strings={[
-                                    'It will cost you to upgrade the bot, develop the bot or promote on our bot, all paid in $DogeGPT token. 50% of tokens paid from buyers will be airdropped to all holders, the remaining 50% we will use for future development. However, it is not ruled out that we will burn it.'
-                                ]}
-                                typeSpeed={40}
-                                cursorChar={''}
-
-                            />
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div className="circle absolute right-0 -mt-32 lg:block hidden">
-                <img src={side_1} alt="" className='' />
-            </div>
-
-            {/* tokenomics */}
-
-            <div id='tokenomics' className="bg-line">
-
-
-                <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
-                    <div className=" text-center">
-                        <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100'>
+                    <div className="text-center flex flex-col items-center justify-center">
+                        <h3 className="text-blue-100 md:text-6xl text-2xl leading-loose font-chucklesome font-bold">
                             TOKENOMICS
-                        </h2>
+                        </h3>
 
-                        <p className="py-6 font-inter font-semibold text-xl">
-                            Contract Address:
+                        <p className='lg:py-12 py-6 lg:w-1/2'>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget quam est, elit venenatis nulla.
                         </p>
-
-                        <button className="border-2 border-white-100 px-5 py-2 rounded-full hover:bg-pink-100">
-                            Click to copy
-                        </button>
                     </div>
 
-                    <div className="grid lg:grid-cols-3 sm:grid-cols-1 justify-between items-center gap-12 mt-20">
-
-
-                        <div className='border-2 border-pink-100 p-5 font-inter'>
-
-                            <h3 className='text-xl font-semibold pt-5'>Development - 1%</h3>
-
-                            <p className="py-6">
-                                <Typed
-                                    strings={[
-                                        'Covers costs related to maintenance improvements of the AIDogeBot.'
-                                    ]}
-                                    typeSpeed={40}
-                                    cursorChar={''}
-
-                                />
-                            </p>
-
-                        </div>
-
-                        <div className='border-2 border-pink-100 p-5 font-inter'>
-
-                            <h3 className='text-xl font-semibold pt-5'>Marketing - 1%</h3>
-
-                            <p className="py-6">
-                                <Typed
-                                    strings={[
-                                        'Gives our community exposure and helps us to grow.'
-                                    ]}
-                                    typeSpeed={40}
-                                    cursorChar={''}
-
-                                />
-                            </p>
-
-                        </div>
-
-                        <div className='border-2 border-pink-100 p-5 font-inter'>
-
-                            <h3 className='text-xl font-semibold pt-5'>Donation - 1%</h3>
-
-                            <p className="py-6">
-                                <Typed
-                                    strings={[
-                                        'Supports AI Research by donating to the team behind AIDoge.'
-                                    ]}
-                                    typeSpeed={40}
-                                    cursorChar={''}
-                                />
-                            </p>
-
-                        </div>
+                    <div className=''>
+                        <img src={chart} alt="" className='flex mx-auto' />
                     </div>
 
-                    <div className="circle absolute left-0 -mt-32 lg:block hidden">
-                        <img src={side} alt="" className='' />
-                    </div>
                 </div>
+
             </div>
 
             {/* roadmap */}
 
-            <div id='roadmap' className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto text-white-100">
-                <div className="">
-                    <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100 text-center'>
-                        ROADMAP
-                    </h2>
+            <div id='roadmap' className="lg:py-12 py-5 lg:px-8 px-5 container mx-auto">
 
-                    <Slider />
+                <h3 className="text-center text-blue-100 md:text-6xl text-2xl leading-loose font-chucklesome font-bold">
+                    ROADMAP
+                </h3>
 
+                <div className="lg:mt-12 mt-6 rounded-2xl bg-blue-200 p-8">
 
                 </div>
 
             </div>
 
-            {/* token listing */}
+            {/* partners */}
 
-            <div id='contract' className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
-                <div className=" text-center">
-                    <h2 className='md:text-4xl text-2xl font-coolvetica font-bold'>
-                        TOKEN LISTINGS
-                    </h2>
+            <div id='partners' className="">
 
-                    <div className="flex justify-center pt-8">
-                        <h2 className='md:text-7xl text-blue-50 text-3xl font-coolvetica font-bold uppercase text-outline'>
-                            coming soon
-                        </h2>
+
+                <div className="lg:py-20 py-5 lg:px-8 px-5 container mx-auto">
+
+                    <h3 className="text-blue-100 md:text-6xl text-2xl text-center leading-loose font-chucklesome font-bold">
+                        PARTNERS
+                    </h3>
+
+                    <div className="lg:mt-12 mt-6 flex items-center justify-center">
+                        <div>
+                            <img src={p_1} alt="" />
+                        </div>
+                        <div>
+                            <img src={p_2} alt="" />
+                        </div>
+                        <div>
+                            <img src={p_3} alt="" />
+                        </div>
+                        <div>
+                            <img src={p_4} alt="" />
+                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
 
             <Footer />
 
-        </div>
+        </div >
     )
 }
