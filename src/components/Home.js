@@ -30,13 +30,13 @@ export default function Home() {
 
                     <div className="py-8">
 
-                        <div className="font-semibold">
-                            Introducing <span className="text-blue-50"> SHIBACK</span>
-                        </div>
-
                         <div className="lg:flex items-center justify-between">
 
                             <div className=" lg:w-1/2">
+
+                                <div className="font-semibold">
+                                    Introducing <span className="text-blue-50"> SHIBACK</span>
+                                </div>
                                 <h1 className="text-blue-100 md:text-6xl text-2xl leading-loose font-chucklesome font-bold">
                                     Gorem ipsum dolor
                                     sit amet, cons
@@ -62,7 +62,7 @@ export default function Home() {
                             </div>
 
                             <div className="img md:mt-0 mt-12 lg:w-1/2">
-                                <img src={top} alt="Logo" className='w-10/12 lg:float-right' />
+                                <img src={top} alt="Logo" className='lg:float-right' />
                             </div>
                         </div>
                     </div>
@@ -114,7 +114,6 @@ export default function Home() {
 
                         <div className="">
                             <img src={video} alt="" />
-                            <img src={about_1} alt="" className='absolute ml-64 -mt-80' />
                         </div>
                     </div>
                 </div>
@@ -154,7 +153,144 @@ export default function Home() {
                     ROADMAP
                 </h3>
 
-                <div className="lg:mt-12 mt-6 rounded-2xl bg-blue-200 p-8">
+                <div className="lg:mt-12 mt-6 rounded-2xl bg-blue-200 lg:p-12 p-6">
+                    <div className="border-b-2 border-yellow-100">
+                    </div>
+
+                    <div className='lg:flex items-baseline justify-between gap-6 lg:px-20 lg:space-y-0 space-y-6'>
+
+
+                        <div className='flex flex-col items-center'>
+                            <div className='absolute -mt-3.5 lg:block hidden'>
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle opacity="0.2" cx="14.1642" cy="13.861" r="13.7717" fill="#D3D648" />
+                                    <circle cx="14.1649" cy="13.8607" r="8.263" fill="#D3D648" />
+                                </svg>
+
+                            </div>
+
+                            <div className="border-l border-white-100 mt-5 my-3 h-14">
+
+                            </div>
+
+                            <div className="border border-yellow-100 rounded-2xl text-white-100 p-5 lg:w-56">
+                                <p className="uppercase text-gray-50 font-bold">
+                                    April 15, 2019
+                                </p>
+
+                                <h5 className="text-2xl py-4 font-semibold">
+                                    Concept
+                                </h5>
+
+                                <ul className="list-disc space-y-4 ml-5">
+                                    <li>
+                                        Concept Generation
+                                    </li>
+                                    <li>
+                                        Team Assemble
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className='flex flex-col items-center'>
+                            <div className='absolute -mt-3.5 lg:block hidden'>
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle opacity="0.2" cx="14.1642" cy="13.861" r="13.7717" fill="#D3D648" />
+                                    <circle cx="14.1649" cy="13.8607" r="8.263" fill="#D3D648" />
+                                </svg>
+
+                            </div>
+
+                            <div className="border-l border-white-100 mt-5 my-3 h-14">
+
+                            </div>
+
+                            <div className="border border-yellow-100 rounded-2xl text-white-100 p-5 lg:w-56">
+                                <p className="uppercase text-gray-50 font-bold">
+                                    April 15, 2019
+                                </p>
+
+                                <h5 className="text-2xl py-4 font-semibold">
+                                    Research
+                                </h5>
+
+                                <ul className="list-disc space-y-4 ml-5">
+                                    <li>
+                                        Proving the concept can work
+                                    </li>
+                                    <li>
+                                        White paper conpletion
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className='flex flex-col items-center lg:block hidden'>
+                            <div className='absolute -mt-3.5'>
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle opacity="0.2" cx="14.1642" cy="13.861" r="13.7717" fill="#D3D648" />
+                                    <circle cx="14.1649" cy="13.8607" r="8.263" fill="#D3D648" />
+                                </svg>
+
+                            </div>
+
+                            <div className="border-l border-white-100 mt-5 my-3 h-14">
+
+                            </div>
+
+                            <div className="border border-yellow-100 rounded-2xl text-white-100 p-5 lg:w-56">
+                                <p className="uppercase text-gray-50 font-bold">
+                                    April 15, 2019
+                                </p>
+
+                                <h5 className="text-2xl py-4 font-semibold">
+                                    Design
+                                </h5>
+
+                                <ul className="list-disc space-y-4 ml-5">
+                                    <li>
+                                        Platform design
+                                    </li>
+                                    <li>
+                                        Building the MVP
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className='flex flex-col items-center lg:block hidden'>
+                            <div className='absolute -mt-3.5'>
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle opacity="0.2" cx="14.1642" cy="13.861" r="13.7717" fill="#D3D648" />
+                                    <circle cx="14.1649" cy="13.8607" r="8.263" fill="#D3D648" />
+                                </svg>
+
+                            </div>
+
+                            <div className="border-l border-white-100 mt-5 my-3 h-14">
+
+                            </div>
+
+                            <div className="border border-yellow-100 rounded-2xl text-white-100 p-5 lg:w-56">
+                                <p className="uppercase text-gray-50 font-bold">
+                                    April 15, 2019
+                                </p>
+
+                                <h5 className="text-2xl py-4 font-semibold">
+                                    Pre-sale
+                                </h5>
+
+                                <ul className="list-disc space-y-4 ml-5">
+                                    <li>
+                                        Public financing & Seed funding raised
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
 
                 </div>
 
