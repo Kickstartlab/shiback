@@ -39,29 +39,29 @@ export default function Menu() {
         </button>
       </div>
 
-      {show ? <div className="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-3/4 overflow-y-auto transition-all duration-300 text-center font-work font-semibold bg-blue-50 z-20" style={{ left: "0" }}>
+      {show ? <div className="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-3/4 overflow-y-auto transition-all duration-300 text-center font-work font-semibold bg-yellow-50 z-20" style={{ left: "0" }}>
         <div className="text-gray-100 text-xl">
           <div className="p-2.5 mt-1 flex items-center">
             <a href="/" className="logo">
-              <h2 className="text-2xl font-extrabold">
-                LAWYER AI
-              </h2>
+              <a href="/" className="logo w-1/2">
+                <img src={logo} alt="" />
+              </a>
             </a>
           </div>
         </div>
-        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md transition duration-500 cursor-pointer text-white-100">
+        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md transition duration-500 cursor-pointer text-blue-100">
           <a href="/" className="text-lg ml-4 font-semibold">Ecosystem</a>
         </button>
-        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer text-white-100">
+        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer text-blue-100">
           <a href="/" className="text-lg ml-4">Buy</a>
         </button>
-        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer text-white-100">
+        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer text-blue-100">
           <a href="#tokenomics" className="text-lg ml-4 font-semibold">Tokenomics</a>
         </button>
-        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer text-white-100">
+        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer text-blue-100">
           <a href="#roadmap" className="text-lg ml-4 font-semibold">Roadmap</a>
         </button>
-        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer text-white-100">
+        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer text-blue-100">
           <a href="#partners" className="text-lg ml-4 font-semibold">Community</a>
         </button>
       </div> : null
