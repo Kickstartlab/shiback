@@ -5,13 +5,8 @@ import p_1 from '../assets/p_1.png';
 import p_2 from '../assets/p_2.png';
 import p_3 from '../assets/p_3.png';
 import p_4 from '../assets/p_4.png';
-import line_1 from '../assets/line_1.png';
-import line_2 from '../assets/line_2.png';
-import line_3 from '../assets/line_3.png';
-import line_4 from '../assets/line_4.png';
 import video from '../assets/video.png';
 import about from '../assets/about.png';
-import chart from '../assets/chart.png';
 import telegram from '../assets/telegram.png';
 import twitter from '../assets/twitter.png';
 import top from '../assets/top.png';
@@ -55,7 +50,7 @@ export default function Home() {
                                 </h1>
 
                                 <div className="py-5">
-                                    Memecoin with a strong community that understands shilling will always win!
+                                    Shilbarium is a Memecoin with a strong community where Shilling wins Buy Back & Burns 🔥.  Those who work together, Win together.🏆
                                 </div>
 
                                 <div className="font-work flex items-center gap-5 mt-6">
