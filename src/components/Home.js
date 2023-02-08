@@ -5,11 +5,13 @@ import p_1 from '../assets/p_1.png';
 import p_2 from '../assets/p_2.png';
 import p_3 from '../assets/p_3.png';
 import p_4 from '../assets/p_4.png';
-import bot from '../assets/bot.png';
 import video from '../assets/video.png';
 import about from '../assets/about.png';
 import about_1 from '../assets/about_1.png';
 import chart from '../assets/chart.png';
+import telegram from '../assets/telegram.png';
+import discord from '../assets/discord.png';
+import twitter from '../assets/twitter.png';
 import top from '../assets/top.png';
 
 
@@ -23,7 +25,7 @@ export default function Home() {
 
             <div className="bg-seagreen-50">
 
-                <div className="lg:px-8 md:px-5 container mx-auto md:block hidden">
+                <div className="lg:px-8 px-5 container mx-auto">
                     <Menu />
 
                     <div className="py-8">
@@ -32,7 +34,7 @@ export default function Home() {
                             Introducing <span className="text-blue-50"> SHIBACK</span>
                         </div>
 
-                        <div className="flex items-center justify-between">
+                        <div className="lg:flex items-center justify-between">
 
                             <div className=" lg:w-1/2">
                                 <h1 className="text-blue-100 md:text-6xl text-2xl leading-loose font-chucklesome font-bold">
@@ -95,8 +97,8 @@ export default function Home() {
                             <a href="/" className='text-blue-50 font-semibold pt-5 flex gap-4'>
                                 Explore Ecosystem
 
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                                 </svg>
 
                             </a>
@@ -104,7 +106,7 @@ export default function Home() {
 
                     </div>
 
-                    <div className="flex items-center justify-between gap-6">
+                    <div className="lg:flex items-center justify-between gap-6">
 
                         <div className="rounded-xl bg-yellow-50 p-6">
                             <img src={about} alt="" />
@@ -169,7 +171,7 @@ export default function Home() {
                         PARTNERS
                     </h3>
 
-                    <div className="lg:mt-12 mt-6 flex items-center justify-center">
+                    <div className="lg:mt-12 mt-6 flex items-center justify-center gap-6">
                         <div>
                             <img src={p_1} alt="" />
                         </div>
@@ -185,6 +187,36 @@ export default function Home() {
                     </div>
 
                 </div>
+
+
+            </div>
+
+            {/* form section */}
+
+            <div id='partners' className="">
+
+
+                <div className="lg:py-20 py-5 lg:px-8 px-5 container mx-auto">
+
+                    <h3 className="text-blue-100 md:text-5xl text-2xl text-center leading-loose font-semibold">
+                        Don't miss out, Stay updated
+                    </h3>
+
+                    <div className="lg:mt-12 mt-6 flex items-center justify-center gap-6">
+                        <a href='/'>
+                            <img src={twitter} alt="" />
+                        </a>
+                        <a href='/'>
+                            <img src={telegram} alt="" />
+                        </a>
+                        <a href='/'>
+                            <img src={discord} alt="" />
+                        </a>
+                    </div>
+
+                </div>
+
+
             </div>
 
             <Footer />
