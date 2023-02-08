@@ -7,7 +7,6 @@ import p_3 from '../assets/p_3.png';
 import p_4 from '../assets/p_4.png';
 import video from '../assets/video.png';
 import about from '../assets/about.png';
-import about_1 from '../assets/about_1.png';
 import chart from '../assets/chart.png';
 import telegram from '../assets/telegram.png';
 import discord from '../assets/discord.png';
@@ -35,7 +34,7 @@ export default function Home() {
                             <div className=" lg:w-1/2">
 
                                 <div className="font-semibold">
-                                    Introducing <span className="text-blue-50 uppercase"> shibarium</span>
+                                    Introducing <span className="text-blue-50 uppercase"> Shilbarium</span>
                                 </div>
                                 <h1 className="text-blue-100 md:text-6xl text-2xl leading-loose font-chucklesome font-bold">
                                     Gorem ipsum dolor
@@ -61,8 +60,25 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div className="img md:mt-0 mt-12 lg:w-1/2">
+                            <div className="img md:mt-0 mt-12 lg:w-1/2 box">
                                 <img src={top} alt="Logo" className='lg:float-right' />
+
+                                <div className="pt-6 lg:float-right">
+
+                                    <svg width="438" height="110" viewBox="0 0 438 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_f_29_11)">
+                                            <ellipse cx="219" cy="55" rx="180" ry="16" fill="#979797" />
+                                        </g>
+                                        <defs>
+                                            <filter id="filter0_f_29_11" x="0" y="0" width="438" height="110" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                                                <feGaussianBlur stdDeviation="19.5" result="effect1_foregroundBlur_29_11" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -71,7 +87,7 @@ export default function Home() {
             </div>
 
 
-            {/*  What Is shibarium */}
+            {/*  What Is Shilbarium */}
 
             <div id='about' className="">
 
@@ -79,20 +95,19 @@ export default function Home() {
 
                     <div className="text-center">
                         <h1 className="text-blue-100 md:text-6xl text-2xl leading-loose font-chucklesome font-bold">
-                            What Is shibarium
+                            What Is Shilbarium
                         </h1>
                     </div>
 
                     <div className="lg:flex items-center justify-between lg:py-16 py-6">
-                        <div className="">
+                        <div className="lg:w-8/12">
                             <h2 className='md:text-4xl text-2xl font-semibold text-blue-100'>
-                                Norem ipsum dolor sit
-                                consectetur
+                                About Us
                             </h2>
                         </div>
 
                         <div>
-                            <p>Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis  Norem ipsum dolor sit amet, consectetur</p>
+                            <p>Shilbarium is a community-owned Arbitrum token that is deflationary by design.  Our community works together and complete the number of shills required and are rewarded with a buy back and burn 🔥. The result is a reduced supply which  constantly raises our floor price and marketcap</p>
 
                             <a href="/" className='text-blue-50 font-semibold pt-5 flex gap-4'>
                                 Explore Ecosystem
@@ -174,20 +189,23 @@ export default function Home() {
                             </div>
 
                             <div className="border border-yellow-100 rounded-2xl text-white-100 p-5 lg:w-56">
-                                <p className="uppercase text-gray-50 font-bold">
-                                    April 15, 2019
-                                </p>
 
                                 <h5 className="text-2xl py-4 font-semibold">
-                                    Concept
+                                    PHASE 1
                                 </h5>
 
-                                <ul className="list-disc space-y-4 ml-5">
+                                <ul className="space-y-4">
                                     <li>
-                                        Concept Generation
+                                        ♦️ CONTRACT, LOGO CREATION
                                     </li>
                                     <li>
-                                        Team Assemble
+                                        ♦️ WEBSITE RELEASE V1
+                                    </li>
+                                    <li>
+                                        ♦️ STEALTH LAUNCH ON ARBITRUM
+                                    </li>
+                                    <li>
+                                        ♦️ REACH 200K MC - 500 HOLDERS
                                     </li>
                                 </ul>
                             </div>
@@ -207,20 +225,23 @@ export default function Home() {
                             </div>
 
                             <div className="border border-yellow-100 rounded-2xl text-white-100 p-5 lg:w-56">
-                                <p className="uppercase text-gray-50 font-bold">
-                                    April 15, 2019
-                                </p>
 
                                 <h5 className="text-2xl py-4 font-semibold">
-                                    Research
+                                    PHASE 2
                                 </h5>
 
-                                <ul className="list-disc space-y-4 ml-5">
+                                <ul className="space-y-4">
                                     <li>
-                                        Proving the concept can work
+                                        ♦️ WHITEPAPER RELEASE
                                     </li>
                                     <li>
-                                        White paper conpletion
+                                        ♦️ AUDIT & KYC FROM A REPUTABLE COMPANY
+                                    </li>
+                                    <li>
+                                        ♦️ PRESS RELEASES & PARTNERSHIPS
+                                    </li>
+                                    <li>
+                                        ♦️ REACH 1M MC & 1K HOLDERS
                                     </li>
                                 </ul>
                             </div>
@@ -240,20 +261,23 @@ export default function Home() {
                             </div>
 
                             <div className="border border-yellow-100 rounded-2xl text-white-100 p-5 lg:w-56">
-                                <p className="uppercase text-gray-50 font-bold">
-                                    April 15, 2019
-                                </p>
 
                                 <h5 className="text-2xl py-4 font-semibold">
-                                    Design
+                                    PHASE 3
                                 </h5>
 
-                                <ul className="list-disc space-y-4 ml-5">
+                                <ul className="space-y-4">
                                     <li>
-                                        Platform design
+                                        ♦️ BRIDGE TO ETH NETWORK
                                     </li>
                                     <li>
-                                        Building the MVP
+                                        ♦️ P2E GAME BETA DEVELOPMENT
+                                    </li>
+                                    <li>
+                                        ♦️ CMC & CG LISTING
+                                    </li>
+                                    <li>
+                                        ♦️ REACH 5M MC & 2K HOLDERS
                                     </li>
                                 </ul>
                             </div>
@@ -273,17 +297,23 @@ export default function Home() {
                             </div>
 
                             <div className="border border-yellow-100 rounded-2xl text-white-100 p-5 lg:w-56">
-                                <p className="uppercase text-gray-50 font-bold">
-                                    April 15, 2019
-                                </p>
 
                                 <h5 className="text-2xl py-4 font-semibold">
-                                    Pre-sale
+                                    PHASE 4
                                 </h5>
 
-                                <ul className="list-disc space-y-4 ml-5">
+                                <ul className="space-y-4">
                                     <li>
-                                        Public financing & Seed funding raised
+                                        ♦️ CEX LISTINGS
+                                    </li>
+                                    <li>
+                                        ♦️ HARDWARE WALLET DEVELOPMENT
+                                    </li>
+                                    <li>
+                                        ♦️ EXPAND TO WORLDWIDE COMMUNITY
+                                    </li>
+                                    <li>
+                                        ♦️ REACH 20M MC & 5K HOLDERS
                                     </li>
                                 </ul>
                             </div>
@@ -308,18 +338,21 @@ export default function Home() {
                     </h3>
 
                     <div className="lg:mt-12 mt-6 flex items-center justify-center gap-6">
-                        <div>
-                            <img src={p_1} alt="" />
-                        </div>
-                        <div>
-                            <img src={p_2} alt="" />
-                        </div>
-                        <div>
-                            <img src={p_3} alt="" />
-                        </div>
-                        <div>
-                            <img src={p_4} alt="" />
-                        </div>
+                        <a href='/' className='border-4 border-yellow-100 rounded-2xl py-4 px-3 lg:w-52 hover:bg-yellow-100'>
+                            <img src={p_1} alt="" className='flex mx-auto w-24' />
+                        </a>
+
+                        <a href='/' className='border-4 border-yellow-100 rounded-2xl py-4 px-3 lg:w-52 hover:bg-yellow-100'>
+                            <img src={p_2} alt="" className='flex mx-auto' />
+                        </a>
+
+                        <a href='/' className='border-4 border-yellow-100 rounded-2xl py-4 px-3 lg:w-52 hover:bg-yellow-100'>
+                            <img src={p_3} alt="" className='flex mx-auto' />
+                        </a>
+
+                        <a href='/' className='border-4 border-yellow-100 rounded-2xl py-4 px-3 lg:w-52 hover:bg-yellow-100'>
+                            <img src={p_4} alt="" className='flex mx-auto' />
+                        </a>
                     </div>
 
                 </div>
