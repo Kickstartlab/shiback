@@ -226,8 +226,8 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className='flex flex-col items-center lg:block hidden'>
-                            <div className='absolute -mt-3.5'>
+                        <div className='flex flex-col items-center'>
+                            <div className='absolute -mt-3.5 lg:block hidden'>
                                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle opacity="0.2" cx="14.1642" cy="13.861" r="13.7717" fill="#D3D648" />
                                     <circle cx="14.1649" cy="13.8607" r="8.263" fill="#D3D648" />
@@ -259,8 +259,8 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className='flex flex-col items-center lg:block hidden'>
-                            <div className='absolute -mt-3.5'>
+                        <div className='flex flex-col items-center'>
+                            <div className='absolute -mt-3.5 lg:block hidden'>
                                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle opacity="0.2" cx="14.1642" cy="13.861" r="13.7717" fill="#D3D648" />
                                     <circle cx="14.1649" cy="13.8607" r="8.263" fill="#D3D648" />
