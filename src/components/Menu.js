@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import logo from '../assets/logo.png';
-
 
 
 
@@ -13,13 +11,14 @@ export default function Menu() {
     <header>
       <div className="lg:flex hidden items-center justify-between font-montserat h-20">
         <a href="/">
-          <img src={logo} alt="" />
+          <h3 className="text-blue-100 md:text-4xl text-2xl leading-loose font-chucklesome font-bold">
+            SHILBARIUM
+          </h3>
         </a>
 
         <nav>
           <ul className="text-md flex justify-center gap-8 items-center">
-            <li><a href="#roadmap" className="text-blue-100 font-semibold">Ecosystem</a></li>
-            <li><a href="#tokenomics" className="text-blue-100 font-semibold">Buy</a></li>
+            <li><a href="https://www.sushi.com/swap" className="text-blue-100 font-semibold">Buy</a></li>
             <li><a href="#tokenomics" className="text-blue-100 font-semibold">Tokenomics</a></li>
             <li><a href="#roadmap" className="text-blue-100 font-semibold">Roadmap</a></li>
             <li><a href="#partners" className="text-blue-100 font-semibold">Community</a></li>
@@ -29,7 +28,9 @@ export default function Menu() {
 
       <div className="lg:hidden flex items-center justify-between pt-5 font-nutino-sans">
         <a href="/" className="logo w-1/2">
-          <img src={logo} alt="" />
+          <h3 className="text-blue-100 text-2xl leading-loose font-chucklesome font-bold">
+            SHILBARIUM
+          </h3>
         </a>
 
         <button onClick={() => setShow(!show)} className="nav cursor-pointer">
@@ -43,17 +44,16 @@ export default function Menu() {
         <div className="text-gray-100 text-xl">
           <div className="p-2.5 mt-1 flex items-center">
             <a href="/" className="logo">
-              <a href="/" className="logo w-1/2">
-                <img src={logo} alt="" />
+              <a href="/" className="">
+                <h3 className="text-blue-100 text-2xl leading-loose font-chucklesome font-bold">
+                  SHILBARIUM
+                </h3>
               </a>
             </a>
           </div>
         </div>
-        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md transition duration-500 cursor-pointer text-blue-100">
-          <a href="/" className="text-lg ml-4 font-semibold">Ecosystem</a>
-        </button>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer text-blue-100">
-          <a href="/" className="text-lg ml-4">Buy</a>
+          <a href="https://www.sushi.com/swap" className="text-lg ml-4">Buy</a>
         </button>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer text-blue-100">
           <a href="#tokenomics" className="text-lg ml-4 font-semibold">Tokenomics</a>
